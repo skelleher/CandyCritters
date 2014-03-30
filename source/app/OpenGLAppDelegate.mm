@@ -370,7 +370,7 @@ static OpenGLAppDelegate* s_pSharedInstance = nil;
             return;
     
         // Start analytics
-        [[LocalyticsSession sharedLocalyticsSession] startSession:@"f398f98591fd6faea17d0d6-dacc3446-407a-11e0-c416-007af5bd88a0"];
+        [[LocalyticsSession sharedLocalyticsSession] startSession:@""];
         
         
         NSCalendar*         calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
