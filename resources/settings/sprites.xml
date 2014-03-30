@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<Sprites
+    NumSprites     = "21"
+>
+
+<!--
+    <Sprite0
+        Name            = "MarineFace"
+        Width           = "128"
+        Height          = "128"
+        NumFrames       = "9">
+        
+        <Frame0 Texture         = "face_ok_glance_left"/>
+        <Frame1 Texture         = "face_ok_glance_right"/>
+        <Frame2 Texture         = "face_ok_grr"/>
+        <Frame3 Texture         = "face_ok_look_left"/>
+        <Frame4 Texture         = "face_ok_look_right"/>
+        <Frame5 Texture         = "face_ok_ouch"/>
+        <Frame6 Texture         = "face_ok_smile"/>
+        <Frame7 Texture         = "face_bruised_fwd"/>
+        <Frame8 Texture         = "face_bruised_glance_left"/>
+    </Sprite0>
+-->
+
+<!--
+    <Sprite0
+        Name            = "block_stone_vert"
+        Width           = "64"
+        Height          = "64"
+        NumFrames       = "2">
+
+        <Frame0 Texture = "stone"/>
+        <Frame1 Texture = "stone_inverse"/>
+    </Sprite0>
+
+
+    <Sprite1
+        Name            = "block_stone_radial"
+        Width           = "64"
+        Height          = "64"
+        NumFrames       = "2">
+        
+        <Frame0 Texture = "stone"/>
+        <Frame1 Texture = "stone_inverse"/>
+    </Sprite1>
+-->    
+
+    <Sprite2
+        Name            = "explosion"
+        Width           = "128"
+        Height          = "128"
+        NumFrames       = "16">
+        
+        <Frame0  Texture = "explosion_frame0"/>
+        <Frame1  Texture = "explosion_frame1"/>
+        <Frame2  Texture = "explosion_frame2"/>
+        <Frame3  Texture = "explosion_frame3"/>
+        <Frame4  Texture = "explosion_frame4"/>
+        <Frame5  Texture = "explosion_frame5"/>
+        <Frame6  Texture = "explosion_frame6"/>
+        <Frame7  Texture = "explosion_frame7"/>
+        <Frame8  Texture = "explosion_frame8"/>
+        <Frame9  Texture = "explosion_frame9"/>
+        <Frame10 Texture = "explosion_frame10"/>
+        <Frame11 Texture = "explosion_frame11"/>
+        <Frame12 Texture = "explosion_frame12"/>
+        <Frame13 Texture = "explosion_frame13"/>
+        <Frame14 Texture = "explosion_frame14"/>
+        <Frame15 Texture = "explosion_frame15"/>
+    </Sprite2>
+    
+<!--
+    <Sprite3
+        Name            = "lizard"
+        Width           = "80"
+        Height          = "80"
+        NumFrames       = "5">
+        
+        <Frame0  Texture = "lizard_happy"/>
+        <Frame1  Texture = "lizard_sad"/>
+        <Frame2  Texture = "lizard_scared"/>
+        <Frame3  Texture = "lizard_excited"/>
+        <Frame4  Texture = "lizard_idle"/>
+    </Sprite3>
+    
+
+    <Sprite4
+        Name            = "cat"
+        Width           = "80"
+        Height          = "80"
+        NumFrames       = "5">
+        
+        <Frame0  Texture = "cat_happy"/>
+        <Frame1  Texture = "cat_sad"/>
+        <Frame2  Texture = "cat_scared"/>
+        <Frame3  Texture = "cat_excited"/>
+        <Frame4  Texture = "cat_idle"/>
+    </Sprite4>
+    
+
+    <Sprite5
+        Name            = "dog"
+        Width           = "80"
+        Height          = "80"
+        NumFrames       = "5">
+        
+        <Frame0  Texture = "dog_happy"/>
+        <Frame1  Texture = "dog_sad"/>
+        <Frame2  Texture = "dog_scared"/>
+        <Frame3  Texture = "dog_excited"/>
+        <Frame4  Texture = "dog_idle"/>
+    </Sprite5>
+    
+
+    <Sprite6
+        Name            = "fox"
+        Width           = "80"
+        Height          = "80"
+        NumFrames       = "5">
+        
+        <Frame0  Texture = "fox_happy"/>
+        <Frame1  Texture = "fox_sad"/>
+        <Frame2  Texture = "fox_scared"/>
+        <Frame3  Texture = "fox_excited"/>
+        <Frame4  Texture = "fox_idle"/>
+    </Sprite6>
+    
+
+    <Sprite7
+        Name            = "rabbit"
+        Width           = "80"
+        Height          = "80"
+        NumFrames       = "5">
+        
+        <Frame0  Texture = "rabbit_happy"/>
+        <Frame1  Texture = "rabbit_sad"/>
+        <Frame2  Texture = "rabbit_scared"/>
+        <Frame3  Texture = "rabbit_excited"/>
+        <Frame4  Texture = "rabbit_idle"/>
+    </Sprite7>
+    
+
+    <Sprite8
+        Name            = "dog2"
+        Width           = "80"
+        Height          = "80"
+        NumFrames       = "5">
+        
+        <Frame0  Texture = "dog2_happy"/>
+        <Frame1  Texture = "dog2_sad"/>
+        <Frame2  Texture = "dog2_scared"/>
+        <Frame3  Texture = "dog2_excited"/>
+        <Frame4  Texture = "dog2_idle"/>
+    </Sprite8>
+    
+
+
+    <Sprite9
+        Name            = "purple"
+        Width           = "80"
+        Height          = "80"
+        NumFrames       = "5">
+        
+        <Frame0  Texture = "purple_happy"/>
+        <Frame1  Texture = "purple_happy"/>
+        <Frame2  Texture = "purple_happy"/>
+        <Frame3  Texture = "purple_happy"/>
+        <Frame4  Texture = "purple_happy"/>
+    </Sprite9>
+    
+
+    <Sprite10
+        Name            = "red"
+        Width           = "80"
+        Height          = "80"
+        NumFrames       = "5">
+        
+        <Frame0  Texture = "red_happy"/>
+        <Frame1  Texture = "red_happy"/>
+        <Frame2  Texture = "red_happy"/>
+        <Frame3  Texture = "red_happy"/>
+        <Frame4  Texture = "red_happy"/>
+    </Sprite10>
+    
+
+    <Sprite11
+        Name            = "aqua"
+        Width           = "80"
+        Height          = "80"
+        NumFrames       = "5">
+        
+        <Frame0  Texture = "aqua_happy"/>
+        <Frame1  Texture = "aqua_happy"/>
+        <Frame2  Texture = "aqua_happy"/>
+        <Frame3  Texture = "aqua_happy"/>
+        <Frame4  Texture = "aqua_happy"/>
+    </Sprite11>
+-->
+    
+<!-- ---------------------------------------------------------------- -->
+
+    <Sprite12
+        Name            = "lightning"
+        Width           = "80"
+        Height          = "80"
+        NumFrames       = "2">
+
+        <Frame0 Texture = "critters_lightning_1"/>
+        <Frame1 Texture = "critters_lightning_2"/>
+    </Sprite12>
+
+
+    <Sprite13
+        Name            = "bomb"
+        Width           = "80"
+        Height          = "80"
+        NumFrames       = "2">
+        
+        <Frame0 Texture = "critters_bomb_1"/>
+        <Frame1 Texture = "critters_bomb_2"/>
+    </Sprite13>
+    
+
+
+    <Sprite14
+        Name            = "blue"
+        Width           = "80"
+        Height          = "80"
+        NumFrames       = "10">
+        
+        <Frame0  Texture = "critters_blue_norm1"/>
+        <Frame1  Texture = "critters_blue_norm2"/>
+        <Frame2  Texture = "critters_blue_norm3"/>
+        <Frame3  Texture = "critters_blue_sad1"/>
+        <Frame4  Texture = "critters_blue_sad2"/>
+        <Frame5  Texture = "critters_blue_scared1"/>
+        <Frame6  Texture = "critters_blue_scared2"/>
+        <Frame7  Texture = "critters_blue_sleep1"/>
+        <Frame8  Texture = "critters_blue_sleep2"/>
+        <Frame9  Texture = "critters_blue_dead"/>
+    </Sprite14>
+
+    <Sprite15
+        Name            = "green"
+        Width           = "80"
+        Height          = "80"
+        NumFrames       = "10">
+        
+        <Frame0  Texture = "critters_green_norm1"/>
+        <Frame1  Texture = "critters_green_norm2"/>
+        <Frame2  Texture = "critters_green_norm3"/>
+        <Frame3  Texture = "critters_green_sad1"/>
+        <Frame4  Texture = "critters_green_sad2"/>
+        <Frame5  Texture = "critters_green_scared1"/>
+        <Frame6  Texture = "critters_green_scared2"/>
+        <Frame7  Texture = "critters_green_sleep1"/>
+        <Frame8  Texture = "critters_green_sleep2"/>
+        <Frame9  Texture = "critters_green_dead"/>
+    </Sprite15>
+
+    <Sprite16
+        Name            = "orange"
+        Width           = "80"
+        Height          = "80"
+        NumFrames       = "10">
+        
+        <Frame0  Texture = "critters_orange_norm1"/>
+        <Frame1  Texture = "critters_orange_norm2"/>
+        <Frame2  Texture = "critters_orange_norm3"/>
+        <Frame3  Texture = "critters_orange_sad1"/>
+        <Frame4  Texture = "critters_orange_sad2"/>
+        <Frame5  Texture = "critters_orange_scared1"/>
+        <Frame6  Texture = "critters_orange_scared2"/>
+        <Frame7  Texture = "critters_orange_sleep1"/>
+        <Frame8  Texture = "critters_orange_sleep2"/>
+        <Frame9  Texture = "critters_orange_dead"/>
+    </Sprite16>
+
+    <Sprite17
+        Name            = "pink"
+        Width           = "80"
+        Height          = "80"
+        NumFrames       = "10">
+        
+        <Frame0  Texture = "critters_pink_norm1"/>
+        <Frame1  Texture = "critters_pink_norm2"/>
+        <Frame2  Texture = "critters_pink_norm3"/>
+        <Frame3  Texture = "critters_pink_sad1"/>
+        <Frame4  Texture = "critters_pink_sad2"/>
+        <Frame5  Texture = "critters_pink_scared1"/>
+        <Frame6  Texture = "critters_pink_scared2"/>
+        <Frame7  Texture = "critters_pink_sleep1"/>
+        <Frame8  Texture = "critters_pink_sleep2"/>
+        <Frame9  Texture = "critters_pink_dead"/>
+    </Sprite17>
+
+    <Sprite18
+        Name            = "purple"
+        Width           = "80"
+        Height          = "80"
+        NumFrames       = "10">
+        
+        <Frame0  Texture = "critters_purple_norm1"/>
+        <Frame1  Texture = "critters_purple_norm2"/>
+        <Frame2  Texture = "critters_purple_norm3"/>
+        <Frame3  Texture = "critters_purple_sad1"/>
+        <Frame4  Texture = "critters_purple_sad2"/>
+        <Frame5  Texture = "critters_purple_scared1"/>
+        <Frame6  Texture = "critters_purple_scared2"/>
+        <Frame7  Texture = "critters_purple_sleep1"/>
+        <Frame8  Texture = "critters_purple_sleep2"/>
+        <Frame9  Texture = "critters_purple_dead"/>
+    </Sprite18>
+
+    <Sprite19
+        Name            = "red"
+        Width           = "80"
+        Height          = "80"
+        NumFrames       = "10">
+        
+        <Frame0  Texture = "critters_red_norm1"/>
+        <Frame1  Texture = "critters_red_norm2"/>
+        <Frame2  Texture = "critters_red_norm3"/>
+        <Frame3  Texture = "critters_red_sad1"/>
+        <Frame4  Texture = "critters_red_sad2"/>
+        <Frame5  Texture = "critters_red_scared1"/>
+        <Frame6  Texture = "critters_red_scared2"/>
+        <Frame7  Texture = "critters_red_sleep1"/>
+        <Frame8  Texture = "critters_red_sleep2"/>
+        <Frame9  Texture = "critters_red_dead"/>
+    </Sprite19>
+
+    <Sprite20
+        Name            = "brown"
+        Width           = "80"
+        Height          = "80"
+        NumFrames       = "10">
+        
+        <Frame0  Texture = "critters_brown_norm1"/>
+        <Frame1  Texture = "critters_brown_norm2"/>
+        <Frame2  Texture = "critters_brown_norm3"/>
+        <Frame3  Texture = "critters_brown_sad1"/>
+        <Frame4  Texture = "critters_brown_sad2"/>
+        <Frame5  Texture = "critters_brown_scared1"/>
+        <Frame6  Texture = "critters_brown_scared2"/>
+        <Frame7  Texture = "critters_brown_sleep1"/>
+        <Frame8  Texture = "critters_brown_sleep2"/>
+        <Frame9  Texture = "critters_brown_dead"/>
+    </Sprite20>
+
+
+</Sprites>

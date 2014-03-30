@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<Sounds
+    NumSounds   = "22"
+    FXVolume    = "0.7"
+    MusicVolume = "0.0"
+>
+    <Sound0
+        Name            = "Tick"
+        Filename        = "/app/sounds/Tick1.wav"
+    />
+
+    <Sound1
+        Name            = "Tock"
+        Filename        = "/app/sounds/Tock.wav"
+    />
+
+    <Sound2
+        Name            = "Rotate"
+        _Filename        = "/app/sounds/Squip.wav"
+        Filename        = "/app/sounds/swish03.wav"
+    />
+
+    <Sound3
+        Name            = "AwesomePowerup"
+        Filename        = "/app/sounds/AwesomePowerup.wav"
+    />
+
+    <Sound4
+        Name            = "Clink"
+        Filename        = "/app/sounds/Clink.wav"
+        _Filename        = "/app/sounds/stone_thud02.wav"
+    />
+
+    <Sound5
+        Name            = "SlideLeft"
+        Filename        = "/app/sounds/Drip.wav"
+    />
+
+    <Sound6
+        Name            = "SlideRight"
+        Filename        = "/app/sounds/Drip.wav"
+    />
+
+    <Sound7
+        Name            = "Drop"
+        Filename        = "/app/sounds/Jump.wav"
+        _Filename        = "/app/sounds/stone_thud01.wav"
+    />
+
+    <Sound8
+        Name            = "Score1"
+        Filename        = "/app/sounds/Score1.wav"
+    />
+
+    <Sound9
+        Name            = "Score2"
+        Filename        = "/app/sounds/Score2.wav"
+    />
+
+    <Sound10
+        Name            = "Score3"
+        Filename        = "/app/sounds/Score3.wav"
+    />
+
+
+    <Sound11
+        Name            = "Chain1"
+        Filename        = "/app/sounds/Chain1.wav"
+    />
+
+
+    <Sound12
+        Name            = "Chain2"
+        Filename        = "/app/sounds/Chain2.wav"
+    />
+
+    <Sound13
+        Name            = "Chain3"
+        Filename        = "/app/sounds/Chain3.wav"
+    />
+
+    <Sound14
+        Name            = "Drip"
+        Filename        = "/app/sounds/Drip.wav"
+    />
+
+    <Sound15
+        Name            = "SmashBlock"
+        Filename        = "/app/sounds/SmashBlock2.wav"
+    />
+
+    <Sound16
+        Name            = "HideMelody"
+        Filename        = "/app/sounds/GemRevealDown.wav"
+    />
+
+    <Sound17
+        Name            = "ShowMelody"
+        Filename        = "/app/sounds/GemRevealUp.wav"
+    />
+
+    <Sound18
+        Name            = "LevelUp"
+        Filename        = "/app/sounds/MajorPickup.wav"
+    />
+
+    <Sound19
+        Name            = "Thud"
+        Filename        = "/app/sounds/stone_thud02.wav"
+        _Filename        = "/app/sounds/Eww.wav"
+    />
+
+    <Sound20
+        Name            = "Awwww"
+        Filename        = "/app/sounds/Awwww.wav"
+    />
+
+    <Sound21
+        Name            = "SlideDown"
+        Filename        = "/app/sounds/Drip.wav"
+    />
+
+
+</Sounds>

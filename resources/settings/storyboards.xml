@@ -1,0 +1,4773 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<Storyboards
+    NumStoryboards  = "74"
+>
+
+<!-- --------------------------------------------------------------------------------- -->
+
+
+
+    <Storyboard0
+        Name                    = "FlashBrick" 
+        NumAnimations           = "1"
+        
+        AutoRepeat              = "0"
+        AutoReverse             = "0"
+        DeleteOnFinish          = "1"
+    >
+   
+        <Animation0
+            Property                = "Opacity"
+            Type                    = "float" 
+            Interpolator            = "QuadraticEaseIn"
+            RelativeToObject  = "0"
+        >
+            <KeyFrames NumKeyFrames = "7">
+                <KeyFrame0 TimeMS = "0"    Value = "1.0"/>
+                <KeyFrame1 TimeMS = "50"   Value = "0.0"/>
+                <KeyFrame2 TimeMS = "100"  Value = "1.0"/>
+                <KeyFrame3 TimeMS = "150"  Value = "0.0"/>
+                <KeyFrame4 TimeMS = "200"  Value = "1.0"/>
+                <KeyFrame5 TimeMS = "250"  Value = "0.0"/>
+                <KeyFrame6 TimeMS = "300"  Value = "1.0"/>
+            </KeyFrames>
+        </Animation0>
+
+    </Storyboard0>
+
+
+
+<!-- --------------------------------------------------------------------------------- -->
+
+
+    <Storyboard1
+        Name                    = "EraseBrick" 
+        NumAnimations           = "3"
+        Interpolator            = "Linear"
+        
+        AutoRepeat              = "0"
+        AutoReverse             = "0"
+        DeleteOnFinish          = "1"
+    >
+   
+        <Animation0
+            Property        = "Rotation"
+            Type            = "vec3" 
+        >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"    Value = "(   0.0,      0.0,    0.0 )"/>
+                <KeyFrame1 TimeMS = "500"  Value = "(   0.0,  -1000.0,    0.0 )"/>
+            </KeyFrames>
+        </Animation0>
+
+        <Animation1 
+            Property         = "Position" 
+            Type             = "vec3" 
+            RelativeToObject = "1"
+        >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"     Value = "(  0.0,      0.0,    0.0 )"/>
+                <KeyFrame1 TimeMS = "500"   Value = "( 32.0,    640.0,    0.0 )"/>
+            </KeyFrames>
+
+        </Animation1>
+
+        <Animation2
+            Property                = "Opacity"
+            Type                    = "float" 
+            RelativeToObject  = "0"
+        >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"    Value = "1.0"/>
+                <KeyFrame1 TimeMS = "500"  Value = "0.0"/>
+            </KeyFrames>
+        </Animation2>
+
+    </Storyboard1>
+
+
+
+<!-- --------------------------------------------------------------------------------- -->
+
+
+
+    <Storyboard2
+        Name                    = "ScoreBrick" 
+        NumAnimations           = "4"
+        
+        AutoRepeat              = "0"
+        AutoReverse             = "0"
+        DeleteOnFinish          = "1"
+    >
+   
+        <Animation0
+            Property        = "Scale"
+            Type            = "float" 
+            Interpolator    = "QuadraticEaseIn"
+        >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"    Value = "0.25"/>
+                <KeyFrame1 TimeMS = "750"  Value = "0.5" />
+            </KeyFrames>
+        </Animation0>
+
+        <Animation1 
+            Property         = "Position" 
+            Type             = "vec3" 
+            Interpolator     = "QuadraticEaseIn"
+            RelativeToObject = "1"
+        >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"    Value = "( 0.0,      0.0,    0.0 )"/>
+                <KeyFrame1 TimeMS = "750"  Value = "( 0.0,    320.0,    0.0 )"/>
+            </KeyFrames>
+
+        </Animation1>
+
+        <Animation2
+            Property                = "Opacity"
+            Type                    = "float" 
+            Interpolator            = "QuadraticEaseIn"
+            RelativeToObject  = "0"
+        >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"    Value = "0.5"/>
+                <KeyFrame1 TimeMS = "500"  Value = "1.0"/>
+                <KeyFrame2 TimeMS = "750"  Value = "0.2"/>
+            </KeyFrames>
+        </Animation2>
+
+        <Animation3 
+            Property         = "Color" 
+            Type             = "color" 
+            Interpolator     = "QuadraticEaseIn"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "5">
+                <KeyFrame0  TimeMS = "0"    Value = "(1.0, 0.0, 0.0, 1.0)"/>
+                <KeyFrame1  TimeMS = "450"  Value = "(0.0, 1.0, 0.0, 1.0)"/>
+                <KeyFrame2  TimeMS = "500"  Value = "(0.0, 0.0, 1.0, 1.0)"/>
+                <KeyFrame3  TimeMS = "650"  Value = "(1.0, 0.0, 0.0, 1.0)"/>
+                <KeyFrame4  TimeMS = "700"  Value = "(0.0, 1.0, 0.0, 1.0)"/>
+            </KeyFrames>
+            
+        </Animation3>
+        
+
+    </Storyboard2>
+
+
+
+<!-- ---------------------------------------------------------------------------------
+
+
+
+    <Storyboard3
+        Name                    = "DropBrick" 
+        NumAnimations           = "1"
+        
+        AutoRepeat              = "0"
+        AutoReverse             = "0"
+        DeleteOnFinish          = "1"
+    >
+        <Animation0 
+            Property         = "Position" 
+            Type             = "vec3" 
+            Interpolator     = "QuadraticEaseInr"
+            RelativeToObject = "1"
+        >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"    Value = "( 0.0,      0.0,    0.0 )"/>
+                <KeyFrame1 TimeMS = "100"  Value = "( 0.0,    -64.0,    0.0 )"/>
+            </KeyFrames>
+
+        </Animation0>
+
+    </Storyboard3>
+
+
+--------------------------------------------------------------------------------- -->
+
+
+<!--
+    <Storyboard4
+        Name                    = "RippleScreen" 
+        NumAnimations           = "6"
+        
+        AutoRepeat              = "1"
+        AutoReverse             = "1"
+        DeleteOnFinish          = "0"
+    >
+        <Animation0 
+            Property         = "Amplitude" 
+            Type             = "float" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+        >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"     Value = "10.0"  />
+                <KeyFrame1 TimeMS = "500"   Value = "10.0"   />
+                <KeyFrame2 TimeMS = "1500"  Value = "10.0"   />
+            </KeyFrames>
+
+        </Animation0>
+
+        <Animation1 
+            Property         = "NumWaves" 
+            Type             = "float" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+        >
+            <KeyFrames NumKeyFrames = "1">
+                <KeyFrame0 TimeMS = "0"     Value = "1.0"  />
+            </KeyFrames>
+
+        </Animation1>
+
+        <Animation2
+            Property         = "Color" 
+            Type             = "color" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+        >
+            <KeyFrames NumKeyFrames = "1">
+                <KeyFrame0 TimeMS = "0"     Value = "(0.1, 0.1, 0.1, 1.0)" />
+            </KeyFrames>
+
+        </Animation2>
+
+
+        <Animation3
+            Property         = "Radius" 
+            Type             = "float" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+        >
+            <KeyFrames NumKeyFrames = "1">
+                <KeyFrame0 TimeMS = "0"     Value = "0.0" />
+            </KeyFrames>
+
+        </Animation3>
+
+        <Animation4 
+            Property         = "WaveLength" 
+            Type             = "float" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+        >
+            <KeyFrames NumKeyFrames = "1">
+                <KeyFrame0 TimeMS = "0"     Value = "50.0"  />
+            </KeyFrames>
+
+        </Animation4>
+
+        <Animation5 
+            Property         = "Speed" 
+            Type             = "float" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "1">
+                <KeyFrame0 TimeMS = "0"     Value = "3.0"  />
+            </KeyFrames>
+            
+        </Animation5>
+        
+    </Storyboard4>
+-->
+
+<!-- --------------------------------------------------------------------------------- -->
+    
+<!--    
+    <Storyboard4
+        Name                    = "GridGameOver" 
+        NumAnimations           = "2"
+        
+        AutoRepeat              = "0"
+        AutoReverse             = "0"
+        DeleteOnFinish          = "0"
+        >
+        
+        <Animation0 
+            Property            = "Rotation" 
+            Type                = "vec3" 
+            Interpolator        = "Linear"
+            RelativeToObject    = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"     Value = "(0, 0, 0)"     />
+                <KeyFrame1 TimeMS = "1000"  Value = "(0, 0, 900)"  />
+            </KeyFrames>
+        </Animation0>
+        
+        <Animation1
+            Property            = "Position" 
+            Type                = "vec3" 
+            Interpolator        = "Linear"
+            RelativeToObject    = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"     Value = "(0, 0, 0)"     />
+                <KeyFrame1 TimeMS = "1000"  Value = "(0, 0, -500)"  />
+            </KeyFrames>
+        </Animation1>
+        
+    </Storyboard4>
+-->
+    
+
+<!-- --------------------------------------------------------------------------------- -->
+
+<!--
+    <Storyboard4
+        Name                    = "Sunburst" 
+        NumAnimations           = "3"
+        
+        AutoRepeat              = "0"
+        AutoReverse             = "0"
+        DeleteOnFinish          = "0"
+    >
+
+        <Animation0
+            Property         = "Rotation" 
+            Type             = "vec3" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+        >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"     Value = "( 0.0, 0.0,  0.0 )"  />
+                <KeyFrame1 TimeMS = "15000" Value = "( 0.0, 0.0,  0.0 )"  />
+                <KeyFrame2 TimeMS = "0"     Value = "( 0.0, 0.0,  0.0 )"  />
+            </KeyFrames>
+        </Animation0>
+
+        <Animation1
+            Property         = "Position" 
+            Type             = "vec3" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+        >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"     Value = "( 0.0,  0.0,  0.0 )"  />
+                <KeyFrame1 TimeMS = "15000" Value = "( 0.0,  0.0,  0.0 )"  />
+                <KeyFrame2 TimeMS = "30000" Value = "( 0.0,  0.0,  0.0 )"  />
+            </KeyFrames>
+        </Animation1>
+
+        <Animation2
+            Property         = "Opacity" 
+            Type             = "float" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+        >
+            <KeyFrames NumKeyFrames = "5">
+                <KeyFrame0 TimeMS = "0"     Value = "0.0"  />
+                <KeyFrame1 TimeMS = "15000" Value = "0.7"  />
+                <KeyFrame2 TimeMS = "25000" Value = "0.7"  />
+                <KeyFrame3 TimeMS = "35000" Value = "0.0"  />
+                <KeyFrame4 TimeMS = "60000" Value = "0.0"  />
+            </KeyFrames>
+        </Animation2>
+
+
+    </Storyboard4>
+
+-->
+    
+<!-- --------------------------------------------------------------------------------- -->
+
+<!--
+    <Storyboard5
+        Name                    = "DoomOut" 
+        NumAnimations           = "1"
+        
+        AutoRepeat              = "0"
+        AutoReverse             = "0"
+        DeleteOnFinish          = "0"
+    >
+        <Animation0 
+            Property         = "Progress" 
+            Type             = "float" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+        >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"     Value = "0.0"  />
+                <KeyFrame1 TimeMS = "2000"  Value = "1.0"  />
+            </KeyFrames>
+
+        </Animation0>
+
+    </Storyboard5>
+
+-->
+
+<!-- --------------------------------------------------------------------------------- -->
+
+
+
+    <Storyboard6
+        Name                    = "TutorialFingerTap" 
+        NumAnimations           = "1"
+        
+        AutoRepeat              = "0"
+        AutoReverse             = "0"
+        DeleteOnFinish          = "1"
+    >
+        <Animation0 
+            Property         = "Scale" 
+            Type             = "float" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+        >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"    Value = "1.0"  />
+                <KeyFrame1 TimeMS = "100"  Value = "0.9"  />
+                <KeyFrame2 TimeMS = "400"  Value = "1.0"  />
+            </KeyFrames>
+
+        </Animation0>
+
+    </Storyboard6>
+
+
+
+<!-- --------------------------------------------------------------------------------- -->
+
+
+
+    <Storyboard7
+        Name                    = "DelayedCameraShake" 
+        NumAnimations           = "1"
+        
+        AutoRepeat              = "0"
+        AutoReverse             = "0"
+        DeleteOnFinish          = "0"
+    >
+        <Animation0
+            Property         = "Position" 
+            Type             = "vec3" 
+            Interpolator     = "QuadraticEaseOut"
+            RelativeToObject = "0"
+        >
+            <KeyFrames NumKeyFrames = "17">
+                <KeyFrame0  TimeMS = "0"   Value = "(   0.0,   0.0,  0.0 )"  />
+                <KeyFrame1  TimeMS = "300" Value = "(   0.0,   0.0,  0.0 )"  />
+
+                <KeyFrame2  TimeMS = "320" Value = "(   5.0,   0.0,  0.0 )"  />
+                <KeyFrame3  TimeMS = "340" Value = "(   0.0,  10.0,  0.0 )"  />
+                <KeyFrame4  TimeMS = "380" Value = "(  10.0,   0.0,  0.0 )"  />
+                <KeyFrame5  TimeMS = "420" Value = "(   0.0, -10.0,  0.0 )"  />
+                <KeyFrame6  TimeMS = "460" Value = "( -10.0,   5.0,  0.0 )"  />
+                <KeyFrame7  TimeMS = "600" Value = "(   0.0,   0.0,  0.0 )"  />
+                <KeyFrame8  TimeMS = "640" Value = "(   0.0,  12.0,  0.0 )"  />
+                <KeyFrame9  TimeMS = "680" Value = "(   0.0,   0.0,  0.0 )"  />
+                <KeyFrame10 TimeMS = "760" Value = "(   0.0,  -5.0,  0.0 )"  />
+                <KeyFrame11 TimeMS = "800" Value = "(  -5.0,   5.0,  0.0 )"  />
+                <KeyFrame12 TimeMS = "820" Value = "(   0.0,   0.0,  0.0 )"  />
+
+                <KeyFrame13 TimeMS = "900" Value = "(  -4.0,   0.0,  0.0 )"  />
+                <KeyFrame14 TimeMS = "925" Value = "(   0.0,  -4.0,  0.0 )"  />
+                <KeyFrame15 TimeMS = "950" Value = "(  -4.0,   4.0,  0.0 )"  />
+                <KeyFrame16 TimeMS = "1000" Value = "(   0.0,   0.0,  0.0 )"  />
+            </KeyFrames>
+
+        </Animation0>
+
+    </Storyboard7>
+
+
+<!-- --------------------------------------------------------------------------------- -->
+
+
+
+    <Storyboard8
+        Name                    = "CameraZoom" 
+        NumAnimations           = "1"
+        
+        AutoRepeat              = "0"
+        AutoReverse             = "0"
+        DeleteOnFinish          = "0"
+    >
+        <Animation0
+            Property         = "Position" 
+            Type             = "vec3" 
+            Interpolator     = "QuadraticEaseOut"
+            RelativeToObject = "1"
+        >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"      Value = "(  0.0,  0.0,   0.0 )"  />
+                <KeyFrame1 TimeMS = "150"    Value = "(  0.0,  0.0, -3.0 )"  />
+                <KeyFrame2 TimeMS = "300"    Value = "(  0.0,  0.0,   0.0 )"  />
+            </KeyFrames>
+
+        </Animation0>
+
+    </Storyboard8>
+    
+
+<!-- --------------------------------------------------------------------------------- -->
+
+    
+    <Storyboard9
+        Name                    = "Nice" 
+        NumAnimations           = "4"
+        
+        AutoRepeat              = "0"
+        AutoReverse             = "0"
+        DeleteOnFinish          = "1"
+        >
+        
+        <Animation0
+            Property            = "Scale"
+            Type                = "float" 
+            Interpolator        = "QuadraticEaseOut"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"     Value = "0.5"/>
+                <KeyFrame1 TimeMS = "1500"  Value = "1.0"/>
+            </KeyFrames>
+        </Animation0>
+        
+        <Animation1 
+            Property            = "Position" 
+            Type                = "vec3" 
+            Interpolator        = "QuadraticEaseOut"
+            _RelativeToObject    = "1"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"     Value = "( 180.0,    100.0,  0.0 )"/>
+                <KeyFrame1 TimeMS = "1500"  Value = "( 140.0,    520.0,  0.0 )"/>
+            </KeyFrames>
+            
+        </Animation1>
+
+
+        <Animation2
+            Property          = "Opacity"
+            Type              = "float" 
+            Interpolator      = "QuadraticEaseOut"
+            RelativeToObject  = "0"
+            >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0  TimeMS = "0"    Value = "1.0"/>
+                <KeyFrame1  TimeMS = "1200" Value = "1.0"/>
+                <KeyFrame2  TimeMS = "1500" Value = "0.0"/>
+            </KeyFrames>
+        </Animation2>
+
+
+        <Animation3 
+            Property            = "Color" 
+            Type                = "color" 
+            Interpolator        = "QuadraticEaseOut"
+            RelativeToObject    = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0  TimeMS = "0"     Value = "(1.0, 1.0, 1.0, 1.0)"/>
+                <KeyFrame1  TimeMS = "1000"  Value = "(0.93, 0.11, 0.14, 1.0)"/>  <!-- light red -->
+            </KeyFrames>
+        </Animation3>
+        
+        
+    </Storyboard9>
+    
+    
+
+
+<!-- --------------------------------------------------------------------------------- -->
+
+
+
+    <Storyboard10
+        Name                    = "AwesomeRipple" 
+        NumAnimations           = "8"
+        
+        AutoRepeat              = "0"
+        AutoReverse             = "0"
+        ReleaseOnFinish         = "1"
+    >
+        <Animation0 
+            Property         = "Amplitude" 
+            Type             = "float"
+            Interpolator     = "QuadraticEaseOut"
+            RelativeToObject = "0"
+        >
+            <KeyFrames NumKeyFrames = "4">
+                <KeyFrame0 TimeMS = "0"    Value = "0.0"  />
+                <KeyFrame1 TimeMS = "300"  Value = "160.0" />
+                <KeyFrame2 TimeMS = "800"  Value = "130.0" />
+                <KeyFrame3 TimeMS = "1500" Value = "0.0"  />
+            </KeyFrames>
+        </Animation0>
+
+
+        <Animation1 
+            Property         = "Radius" 
+            Type             = "float" 
+            Interpolator     = "QuadraticEaseOut"
+            RelativeToObject = "0"
+        >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"    Value = "20.0"  />
+                <KeyFrame1 TimeMS = "1500" Value = "800.0" />
+            </KeyFrames>
+        </Animation1>
+
+
+        <Animation2 
+            Property         = "NumWaves" 
+            Type             = "float" 
+            Interpolator     = "QuadraticEaseOut"
+            RelativeToObject = "0"
+        >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"    Value = "1.0"  />
+                <KeyFrame1 TimeMS = "1500" Value = "1.0" />
+            </KeyFrames>
+        </Animation2>
+        
+
+        <Animation3 
+            Property         = "WaveLength" 
+            Type             = "float" 
+            Interpolator     = "QuadraticEaseOut"
+            RelativeToObject = "0"
+        >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"     Value = "100.0" />
+                <KeyFrame1 TimeMS = "1500"  Value = "300.0" />
+            </KeyFrames>
+        </Animation3>
+        
+
+        <Animation4 
+            Property         = "Padding" 
+            Type             = "UINT32" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+        >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"     Value = "0" />
+                <KeyFrame1 TimeMS = "1500"  Value = "0" />
+            </KeyFrames>
+        </Animation4>
+
+<!--
+        <Animation5 
+            Property         = "Color" 
+            Type             = "color" 
+            Interpolator     = "QuadraticEaseOut"
+            RelativeToObject = "0"
+        >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"     Value = "(1.0,  0.8, 0.0, 1.0)" />
+                <KeyFrame1 TimeMS = "1500"  Value = "(0.75, 0.0, 1.0, 0.0)" />
+            </KeyFrames>
+        </Animation5>
+-->
+
+        <Animation6
+            Property         = "Rows"
+            Type             = "UINT32"
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+        >
+            <KeyFrames NumKeyFrames = "1">
+                <KeyFrame0 TimeMS = "0"     Value = "4" />
+            </KeyFrames>
+        </Animation6>
+
+
+        <Animation7
+            Property         = "Columns"
+            Type             = "UINT32"
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+        >
+            <KeyFrames NumKeyFrames = "1">
+                <KeyFrame0 TimeMS = "0"     Value = "4" />
+            </KeyFrames>
+        </Animation7>
+
+    </Storyboard10>
+
+
+
+<!-- --------------------------------------------------------------------------------- -->
+
+
+
+    <Storyboard11
+        Name                    = "TutorialFingerSwipe" 
+        NumAnimations           = "1"
+        
+        AutoRepeat              = "0"
+        AutoReverse             = "0"
+        DeleteOnFinish          = "1"
+        RelativeToObject        = "1"
+    >
+        <Animation0 
+            Property         = "Position" 
+            Type             = "vec3" 
+            Interpolator     = "Linear"
+            RelativeToObject = "1"
+        >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"    Value = "(0,    0, 0)"  />
+                <KeyFrame1 TimeMS = "100"  Value = "(0, -340, 0)"  />
+            </KeyFrames>
+
+        </Animation0>
+
+    </Storyboard11>
+
+
+
+
+<!-- --------------------------------------------------------------------------------- -->
+    
+    
+    
+    <Storyboard12
+        Name                    = "MorphToLR" 
+        NumAnimations           = "8"
+        
+        AutoRepeat              = "0"
+        AutoReverse             = "0"
+        DeleteOnFinish          = "0"
+        >
+        
+        <!-- Left Curve -->
+
+        <Animation0 
+            Property         = "Curve0p3"
+            Type             = "vec3" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"     Value = "(0,    1024,   0)"  />
+                <KeyFrame1 TimeMS = "200"   Value = "(0,    0,      0)"  />
+                <KeyFrame2 TimeMS = "500"   Value = "(600,  0,      0)"  />
+            </KeyFrames>
+        </Animation0>
+        
+        <Animation1
+            Property         = "Curve0p2" 
+            Type             = "vec3" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "4">
+                <KeyFrame0 TimeMS = "0"    Value = "(0,     700,    0)"  />
+                <KeyFrame1 TimeMS = "100"  Value = "(-320,  0,      0)"  />
+                <KeyFrame2 TimeMS = "200"  Value = "(300,   0,      0)"  />
+                <KeyFrame3 TimeMS = "500"  Value = "(600,   0,      0)"  />
+            </KeyFrames>
+        </Animation1>
+        
+        <Animation2
+            Property         = "Curve0p1"
+            Type             = "vec3" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"    Value = "(0,     300,    0)"  />
+                <KeyFrame1 TimeMS = "500"  Value = "(600,   0,      0)"  />
+            </KeyFrames>
+        </Animation2>
+        
+        <Animation3
+            Property         = "Curve0p0" 
+            Type             = "vec3" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"     Value = "(0,    0,      0)"  />
+                <KeyFrame1 TimeMS = "100"   Value = "(600,  0,      0)"  />
+                <KeyFrame2 TimeMS = "500"   Value = "(600,  0,      0)"  />
+            </KeyFrames>
+        </Animation3>
+        
+
+        <!-- Right Curve -->
+        
+        <Animation4
+            Property         = "Curve1p3"
+            Type             = "vec3" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"    Value = "(640, 1024, 0)"  />
+                <KeyFrame1 TimeMS = "200"  Value = "(640, 960, 0)"  />
+                <KeyFrame2 TimeMS = "500"  Value = "(600,   0, 0)"  />
+            </KeyFrames>
+        </Animation4>
+        
+        <Animation5
+            Property         = "Curve1p2" 
+            Type             = "vec3" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"    Value = "(640, 700, 0)"  />
+                <KeyFrame1 TimeMS = "200"  Value = "(500, 700, 0)"  />
+                <KeyFrame2 TimeMS = "500"  Value = "(600,   0, 0)"  />
+            </KeyFrames>
+        </Animation5>
+        
+        <Animation6
+            Property         = "Curve1p1"
+            Type             = "vec3" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"    Value = "(640, 300, 0)"  />
+                <KeyFrame1 TimeMS = "200"  Value = "(400, 300, 0)"  />
+                <KeyFrame2 TimeMS = "500"  Value = "(600,   0, 0)"  />
+            </KeyFrames>
+        </Animation6>
+        
+        <Animation7
+            Property         = "Curve1p0" 
+            Type             = "vec3" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"    Value = "(640, 0, 0)"  />
+                <KeyFrame1 TimeMS = "500"  Value = "(600, 0, 0)"  />
+            </KeyFrames>
+        </Animation7>
+        
+    </Storyboard12>
+    
+    
+    <!-- --------------------------------------------------------------------------------- -->
+    
+
+    <Storyboard13
+        Name                    = "MorphFromLR" 
+        NumAnimations           = "8"
+        
+        AutoRepeat              = "0"
+        AutoReverse             = "0"
+        DeleteOnFinish          = "0"
+        >
+        
+        <!-- Curve 0 -->
+        
+        <Animation0 
+            Property         = "Curve0p3" 
+            Type             = "vec3" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"     Value = "(600,      0,      0)"  />
+                <KeyFrame1 TimeMS = "200"   Value = "(0,        0,      0)"  />
+                <KeyFrame2 TimeMS = "500"   Value = "(0,        1024,    0)"  />
+            </KeyFrames>
+        </Animation0>
+        
+        <Animation1
+            Property         = "Curve0p2"
+            Type             = "vec3" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "4">
+                <KeyFrame0 TimeMS = "0"     Value = "(600,      0,      0)"  />
+                <KeyFrame1 TimeMS = "100"   Value = "(300,      0,      0)"  />
+                <KeyFrame2 TimeMS = "200"   Value = "(-320,     0,      0)"  />
+                <KeyFrame3 TimeMS = "500"   Value = "(0,        700,    0)"  />
+            </KeyFrames>
+        </Animation1>
+        
+        <Animation2
+            Property         = "Curve0p1" 
+            Type             = "vec3" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"     Value = "(600,      0,      0)"  />
+                <KeyFrame1 TimeMS = "500"   Value = "(0,        300,    0)"  />
+            </KeyFrames>
+        </Animation2>
+        
+        <Animation3
+            Property         = "Curve0p0" 
+            Type             = "vec3" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"     Value = "(600,      0,      0)"  />
+                <KeyFrame1 TimeMS = "100"   Value = "(600,      0,      0)"  />
+                <KeyFrame2 TimeMS = "500"   Value = "(0,        0,      0)"  />
+            </KeyFrames>
+        </Animation3>
+        
+        
+        <!-- Curve 1 -->
+        
+        <Animation4 
+            Property         = "Curve1p3" 
+            Type             = "vec3" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"     Value = "(600,      0,      0)"  />
+                <KeyFrame1 TimeMS = "200"   Value = "(640,      960,    0)"  />
+                <KeyFrame2 TimeMS = "500"   Value = "(640,      1024,   0)"  />
+            </KeyFrames>
+        </Animation4>
+        
+        <Animation5
+            Property         = "Curve1p2" 
+            Type             = "vec3" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"     Value = "(600,      0,      0)"  />
+                <KeyFrame1 TimeMS = "300"   Value = "(500,      700,    0)"  />
+                <KeyFrame2 TimeMS = "500"   Value = "(640,      700,    0)"  />
+            </KeyFrames>
+        </Animation5>
+        
+        <Animation6
+            Property         = "Curve1p1" 
+            Type             = "vec3" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"     Value = "(600,      0,      0)"  />
+                <KeyFrame1 TimeMS = "300"   Value = "(400,      300,    0)"  />
+                <KeyFrame2 TimeMS = "500"   Value = "(640,      300,    0)"  />
+            </KeyFrames>
+        </Animation6>
+        
+        <Animation7
+            Property         = "Curve1p0" 
+            Type             = "vec3" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"     Value = "(600,      0,      0)"  />
+                <KeyFrame1 TimeMS = "500"   Value = "(640,      0,      0)"  />
+            </KeyFrames>
+        </Animation7>
+        
+    </Storyboard13>
+    
+    
+    
+    <!-- --------------------------------------------------------------------------------- -->
+    
+    
+    
+    <Storyboard14
+        Name                    = "MorphToUL" 
+        NumAnimations           = "8"
+        
+        AutoRepeat              = "0"
+        AutoReverse             = "0"
+        DeleteOnFinish          = "0"
+        >
+        
+        <!-- Left Curve -->
+        
+        <Animation0 
+            Property         = "Curve0p3"
+            Type             = "vec3" 
+            Interpolator     = "QuadraticEaseOut"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"     Value = "(32,   928, 0)"  />
+                <KeyFrame1 TimeMS = "200"   Value = "(40,   928, 0)"  />
+                <KeyFrame2 TimeMS = "500"   Value = "(40,   928, 0)"  />
+            </KeyFrames>
+        </Animation0>
+        
+        <Animation1
+            Property         = "Curve0p2"
+            Type             = "vec3" 
+            Interpolator     = "QuadraticEaseOut"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "4">
+                <KeyFrame0 TimeMS = "0"     Value = "(32,     700,    0)"  />
+                <KeyFrame1 TimeMS = "100"   Value = "(32,     928,    0)"  />
+                <KeyFrame2 TimeMS = "200"   Value = "(32,     928,    0)"  />
+                <KeyFrame3 TimeMS = "500"   Value = "(32,     928,    0)"  />
+            </KeyFrames>
+        </Animation1>
+        
+        <Animation2
+            Property         = "Curve0p1" 
+            Type             = "vec3" 
+            Interpolator     = "QuadraticEaseOut"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"     Value = "(32,     300,    0)"  />
+                <KeyFrame1 TimeMS = "500"   Value = "(32,     928,    0)"  />
+            </KeyFrames>
+        </Animation2>
+        
+        <Animation3
+            Property         = "Curve0p0" 
+            Type             = "vec3" 
+            Interpolator     = "QuadraticEaseOut"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"     Value = "(32,    0,      0)"  />
+                <KeyFrame1 TimeMS = "300"   Value = "(40,   0,      0)"  />
+                <KeyFrame2 TimeMS = "500"   Value = "(40,   928,   0)"  />
+            </KeyFrames>
+        </Animation3>
+        
+        
+        <!-- Right Curve -->
+        
+        <Animation4
+            Property         = "Curve1p3"
+            Type             = "vec3" 
+            Interpolator     = "QuadraticEaseOut"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"     Value = "(640,  928,   0)"  />
+                <KeyFrame1 TimeMS = "100"   Value = "(40,   928,   0)"  />
+                <KeyFrame2 TimeMS = "500"   Value = "(40,   928,   0)"  />
+            </KeyFrames>
+        </Animation4>
+        
+        <Animation5
+            Property         = "Curve1p2"
+            Type             = "vec3" 
+            Interpolator     = "QuadraticEaseOut"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "4">
+                <KeyFrame0 TimeMS = "0"     Value = "(640,   700,    0)"  />
+                <KeyFrame1 TimeMS = "100"   Value = "(640,   928,    0)"  />
+                <KeyFrame2 TimeMS = "200"   Value = "(40,    928,    0)"  />
+                <KeyFrame3 TimeMS = "500"   Value = "(40,    928,    0)"  />
+            </KeyFrames>
+        </Animation5>
+        
+        <Animation6
+            Property         = "Curve1p1"
+            Type             = "vec3" 
+            Interpolator     = "QuadraticEaseOut"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"     Value = "(640,   300,    0)"  />
+                <KeyFrame1 TimeMS = "300"   Value = "(140,   928,    0)"  />
+                <KeyFrame2 TimeMS = "500"   Value = "(40,    928,    0)"  />
+            </KeyFrames>
+        </Animation6>
+        
+        <Animation7
+            Property         = "Curve1p0" 
+            Type             = "vec3" 
+            Interpolator     = "QuadraticEaseOut"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"     Value = "(640,  0,      0)"  />
+                <KeyFrame1 TimeMS = "200"   Value = "(640,  0,      0)"  />
+                <KeyFrame2 TimeMS = "500"   Value = "(40,   928,    0)"  />
+            </KeyFrames>
+        </Animation7>
+        
+    </Storyboard14>
+    
+    
+    <!-- --------------------------------------------------------------------------------- -->
+    
+    
+    <Storyboard15
+        Name                    = "MorphFromUL" 
+        NumAnimations           = "8"
+        
+        AutoRepeat              = "0"
+        AutoReverse             = "0"
+        DeleteOnFinish          = "0"
+        >
+        
+        <!-- Left Curve -->
+        
+        <Animation0 
+            Property         = "Curve0p3"
+            Type             = "vec3" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"     Value = "(0,   0, 0)"  />
+                <KeyFrame1 TimeMS = "200"   Value = "(0,   0, 0)"  />
+                <KeyFrame2 TimeMS = "500"   Value = "(0,   960, 0)"  />
+            </KeyFrames>
+        </Animation0>
+        
+        <Animation1
+            Property         = "Curve0p2"
+            Type             = "vec3" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "4">
+                <KeyFrame0 TimeMS = "0"     Value = "(320,    0, 0)"  />
+                <KeyFrame1 TimeMS = "100"   Value = "(320,    0, 0)"  />
+                <KeyFrame2 TimeMS = "200"   Value = "(320,    0, 0)"  />
+                <KeyFrame3 TimeMS = "500"  Value = "(0,    960, 0)"  />
+            </KeyFrames>
+        </Animation1>
+        
+        <Animation2
+            Property         = "Curve0p1" 
+            Type             = "vec3" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"     Value = "(320,    0, 0)"  />
+                <KeyFrame1 TimeMS = "500"  Value = "(0,    480, 0)"  />
+            </KeyFrames>
+        </Animation2>
+        
+        <Animation3
+            Property         = "Curve0p0" 
+            Type             = "vec3" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"     Value = "(0,    0, 0)"  />
+                <KeyFrame1 TimeMS = "200"   Value = "(0,    0, 0)"  />
+                <KeyFrame2 TimeMS = "500"  Value = "(0,    0, 0)"  />
+            </KeyFrames>
+        </Animation3>
+        
+        
+        <!-- Right Curve -->
+        
+        <Animation4
+            Property         = "Curve1p3"
+            Type             = "vec3" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"     Value = "(640, 0, 0)"  />
+                <KeyFrame1 TimeMS = "100"   Value = "(640, 0, 0)"  />
+                <KeyFrame2 TimeMS = "500"  Value = "(640, 960, 0)"  />
+            </KeyFrames>
+        </Animation4>
+        
+        <Animation5
+            Property         = "Curve1p2"
+            Type             = "vec3" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "4">
+                <KeyFrame0 TimeMS = "0"     Value = "(640,  0, 0)"  />
+                <KeyFrame1 TimeMS = "100"   Value = "(640,  0, 0)"  />
+                <KeyFrame2 TimeMS = "200"   Value = "(640,  0, 0)"  />
+                <KeyFrame3 TimeMS = "500"  Value = "(960,  960, 0)"  />
+            </KeyFrames>
+        </Animation5>
+        
+        <Animation6
+            Property         = "Curve1p1" 
+            Type             = "vec3" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"     Value = "(640, 0, 0)"  />
+                <KeyFrame1 TimeMS = "300"   Value = "(640, 0, 0)"  />
+                <KeyFrame2 TimeMS = "500"  Value = "(960, 0, 0)"  />
+            </KeyFrames>
+        </Animation6>
+        
+        <Animation7
+            Property         = "Curve1p0" 
+            Type             = "vec3" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"     Value = "(640, 0, 0)"  />
+                <KeyFrame1 TimeMS = "200"   Value = "(640, 0, 0)"  />
+                <KeyFrame2 TimeMS = "500"  Value = "(640, 0, 0)"  />
+            </KeyFrames>
+        </Animation7>
+        
+    </Storyboard15>
+    
+
+
+<!-- --------------------------------------------------------------------------------- -->
+    
+    
+    <Storyboard16
+        Name                    = "DropColumn" 
+        NumAnimations           = "1"
+        
+        AutoRepeat              = "0"
+        AutoReverse             = "0"
+        DeleteOnFinish          = "0"
+        >
+        <Animation0
+            Property         = "Position" 
+            Type             = "vec3" 
+            Interpolator     = "Linear"
+            RelativeToObject = "1"
+            >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"    Value = "(  0.0,    0.0,  0.0 )"  />
+                <KeyFrame1 TimeMS = "75"   Value = "(  0.0,   -6.0,  0.0 )"  />
+                <KeyFrame2 TimeMS = "150"  Value = "(  0.0,    0.0,  0.0 )"  />
+            </KeyFrames>
+            
+        </Animation0>
+    </Storyboard16>
+    
+    
+    
+    
+    
+
+<!-- --------------------------------------------------------------------------------- -->
+    
+    
+
+    <Storyboard17
+        Name                    = "HideGameGrid" 
+        NumAnimations           = "1"
+        
+        AutoRepeat              = "0"
+        AutoReverse             = "0"
+        DeleteOnFinish          = "0"
+        >
+        
+        <Animation0 
+            Property            = "Rotation" 
+            Type                = "vec3" 
+            Interpolator        = "QuadraticEaseOut"
+            RelativeToObject    = "0"
+            >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"     Value = "(0,   0, 0)"  />
+                <KeyFrame1 TimeMS = "250"     Value = "(0,   0, 0)"  />
+                <KeyFrame2 TimeMS = "1250"   Value = "(0, -180, 0)"  />
+            </KeyFrames>
+        </Animation0>
+        
+        
+    </Storyboard17>
+    
+    
+    
+    <!-- --------------------------------------------------------------------------------- -->
+    
+    
+    
+    <Storyboard18
+        Name                    = "ShowGameGrid" 
+        NumAnimations           = "1"
+        
+        AutoRepeat              = "0"
+        AutoReverse             = "0"
+        DeleteOnFinish          = "0"
+        >
+        
+        <Animation0 
+            Property            = "Rotation" 
+            Type                = "vec3" 
+            Interpolator        = "QuadraticEaseOut"
+            RelativeToObject    = "0"
+            >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"     Value = "(0,  -180, 0)"  />
+                <KeyFrame1 TimeMS = "250"     Value = "(0,  -180, 0)"  />
+                <KeyFrame2 TimeMS = "750"   Value = "(0,  0, 0)"  />
+            </KeyFrames>
+        </Animation0>
+        
+        
+    </Storyboard18>
+    
+    
+    
+    <!-- --------------------------------------------------------------------------------- -->
+    
+    
+    
+    <Storyboard19
+        Name                    = "BlurOut" 
+        NumAnimations           = "1"
+        
+        AutoRepeat              = "0"
+        AutoReverse             = "0"
+        DeleteOnFinish          = "0"
+        >
+        
+        <Animation0 
+            Property         = "Radius" 
+            Type             = "float" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"     Value = "0"   />
+                <KeyFrame1 TimeMS = "500"   Value = "5"  />
+            </KeyFrames>
+        </Animation0>
+        
+        
+    </Storyboard19>
+    
+    
+    
+    <!-- --------------------------------------------------------------------------------- -->
+    
+    
+    
+    <Storyboard20
+        Name                    = "BlurIn" 
+        NumAnimations           = "1"
+        
+        AutoRepeat              = "0"
+        AutoReverse             = "0"
+        DeleteOnFinish          = "0"
+        >
+        
+        <Animation0 
+            Property         = "Radius" 
+            Type             = "float" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"     Value = "5"  />
+                <KeyFrame1 TimeMS = "500"   Value = "0"   />
+            </KeyFrames>
+        </Animation0>
+        
+        
+    </Storyboard20>
+    
+    
+<!-- --------------------------------------------------------------------------------- -->
+    
+    
+    
+    <Storyboard21
+        Name                    = "Chain"
+        NumAnimations           = "3"
+        
+        AutoRepeat              = "0"
+        AutoReverse             = "0"
+        DeleteOnFinish          = "1"
+        >
+        
+        <Animation0
+            Property        = "Scale"
+            Type            = "float" 
+            Interpolator    = "QuadraticEaseOut"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"     Value = "0.5"/>
+                <KeyFrame1 TimeMS = "1500"  Value = "1.0"/>
+            </KeyFrames>
+        </Animation0>
+        
+        <Animation1 
+            Property         = "Position" 
+            Type             = "vec3" 
+            Interpolator     = "QuadraticEaseOut"
+            _RelativeToObject = "1"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"     Value = "( 180.0,   0.0,  0.0 )"/>
+                <KeyFrame1 TimeMS = "1500"  Value = "( 120.0, 620.0,  0.0 )"/>
+            </KeyFrames>
+            
+        </Animation1>
+        
+        <Animation2
+            Property          = "Opacity"
+            Type              = "float" 
+            Interpolator      = "QuadraticEaseOut"
+            RelativeToObject  = "0"
+            >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0  TimeMS = "0"    Value = "1.0"/>
+                <KeyFrame1  TimeMS = "1200" Value = "1.0"/>
+                <KeyFrame2  TimeMS = "1500" Value = "0.0"/>
+            </KeyFrames>
+        </Animation2>
+
+<!--
+        <Animation3 
+            Property         = "Color" 
+            Type             = "color" 
+            Interpolator     = "QuadraticEaseOut"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0  TimeMS = "0"     Value = "(1.0, 1.0, 1.0, 1.0)"/>
+                <KeyFrame1  TimeMS = "1000"  Value = "(0.52, 0.38, 0.67, 1.0)"/>
+            </KeyFrames>
+        </Animation3>
+-->        
+
+    </Storyboard21>
+    
+    
+    
+<!-- --------------------------------------------------------------------------------- -->
+    
+    
+    
+    <Storyboard22
+        Name                    = "LevelUp" 
+        NumAnimations           = "4"
+        
+        AutoRepeat              = "0"
+        AutoReverse             = "0"
+        DeleteOnFinish          = "1"
+        >
+        
+        <Animation0
+            Property        = "Scale"
+            Type            = "float" 
+            Interpolator    = "QuadraticEaseOut"
+            >
+            <KeyFrames NumKeyFrames = "4">
+                <KeyFrame0 TimeMS = "0"     Value = "0.0"/>
+                <KeyFrame1 TimeMS = "500"   Value = "0.0"/>
+                <KeyFrame2 TimeMS = "1000"  Value = "0.5"/>
+                <KeyFrame3 TimeMS = "2500"  Value = "1.0"/>
+            </KeyFrames>
+        </Animation0>
+        
+        <Animation1 
+            Property         = "Position" 
+            Type             = "vec3" 
+            Interpolator     = "QuadraticEaseOut"
+            RelativeToObject = "1"
+            >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"     Value = "( 0.0,      0.0,    0.0 )"/>
+                <KeyFrame1 TimeMS = "500"   Value = "( 400.0,    0.0,    0.0 )"/>
+                <KeyFrame2 TimeMS = "2500"  Value = "( 50.0,   320.0,    0.0 )"/>
+            </KeyFrames>
+            
+        </Animation1>
+        
+        <Animation2
+            Property          = "Opacity"
+            Type              = "float" 
+            Interpolator      = "QuadraticEaseOut"
+            RelativeToObject  = "0"
+            >
+            <KeyFrames NumKeyFrames = "4">
+                <KeyFrame0  TimeMS = "0"    Value = "0.0"/>
+                <KeyFrame1  TimeMS = "1200" Value = "1.0"/>
+                <KeyFrame2  TimeMS = "3000" Value = "1.0"/>
+                <KeyFrame3  TimeMS = "4000" Value = "0.0"/>
+            </KeyFrames>
+        </Animation2>
+
+
+        <Animation3
+            Property         = "Color" 
+            Type             = "color" 
+            Interpolator     = "QuadraticEaseOut"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0  TimeMS = "0"     Value = "(1.0, 1.0, 1.0, 1.0)"/>
+                <KeyFrame1  TimeMS = "1000"  Value = "(0.95, 0.87, 0.22, 1.0)"/>
+            </KeyFrames>
+        </Animation3>
+        
+    </Storyboard22>
+    
+
+
+<!-- --------------------------------------------------------------------------------- -->
+    
+    
+    
+    <Storyboard23
+        Name                    = "FadeIn" 
+        NumAnimations           = "1"
+        
+        AutoRepeat              = "0"
+        AutoReverse             = "0"
+        DeleteOnFinish          = "0"
+        >
+        
+        <Animation0
+            Property                = "Opacity"
+            Type                    = "float" 
+            Interpolator            = "Linear"
+            RelativeToObject  = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"     Value = "0.0"/>
+                <KeyFrame1 TimeMS = "750"   Value = "1.0"/>
+            </KeyFrames>
+        </Animation0>
+        
+    </Storyboard23>
+    
+    
+<!-- --------------------------------------------------------------------------------- -->
+    
+    
+    
+    <Storyboard24
+        Name                    = "FadeOut" 
+        NumAnimations           = "1"
+        
+        AutoRepeat              = "0"
+        AutoReverse             = "0"
+        DeleteOnFinish          = "0"
+        >
+        
+        <Animation0
+            Property                = "Opacity"
+            Type                    = "float" 
+            Interpolator            = "Linear"
+            RelativeToObject  = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"     Value = "1.0"/>
+                <KeyFrame1 TimeMS = "750"   Value = "0.0"/>
+            </KeyFrames>
+        </Animation0>
+        
+    </Storyboard24>
+    
+    
+    
+<!-- --------------------------------------------------------------------------------- -->
+    
+    
+    
+    <Storyboard25
+        Name                    = "HighScore" 
+        NumAnimations           = "3"
+        
+        AutoRepeat              = "0"
+        AutoReverse             = "0"
+        DeleteOnFinish          = "1"
+        >
+        
+        <Animation0
+            Property        = "Scale"
+            Type            = "float" 
+            Interpolator    = "QuadraticEaseOut"
+            >
+            <KeyFrames NumKeyFrames = "4">
+                <KeyFrame0 TimeMS = "0"     Value = "0.0"/>
+                <KeyFrame1 TimeMS = "500"   Value = "0.0"/>
+                <KeyFrame2 TimeMS = "1000"  Value = "0.5"/>
+                <KeyFrame3 TimeMS = "2500"  Value = "1.0"/>
+            </KeyFrames>
+        </Animation0>
+        
+        <Animation1 
+            Property         = "Position" 
+            Type             = "vec3" 
+            Interpolator     = "QuadraticEaseOut"
+            RelativeToObject = "1"
+            >
+            <KeyFrames NumKeyFrames = "4">
+                <KeyFrame0 TimeMS = "0"     Value = "(  0.0,    320.0,    0.0 )"/>
+                <KeyFrame1 TimeMS = "1000"  Value = "( 50.0,    320.0,    0.0 )"/>
+                <KeyFrame2 TimeMS = "2000"  Value = "( 50.0,    640.0,    0.0 )"/>
+                <KeyFrame3 TimeMS = "2500"  Value = "( 50.0,    800.0,    0.0 )"/>
+            </KeyFrames>
+            
+        </Animation1>
+        
+        <Animation2
+            Property                = "Opacity"
+            Type                    = "float" 
+            Interpolator            = "QuadraticEaseOut"
+            RelativeToObject  = "0"
+            >
+            <KeyFrames NumKeyFrames = "4">
+                <KeyFrame0 TimeMS = "0"     Value = "0.0"/>
+                <KeyFrame1 TimeMS = "500"   Value = "0.0"/>
+                <KeyFrame2 TimeMS = "1000"  Value = "1.0"/>
+                <KeyFrame3 TimeMS = "2500"  Value = "0.8"/>
+            </KeyFrames>
+        </Animation2>
+        
+        
+    </Storyboard25>
+    
+    
+
+<!-- --------------------------------------------------------------------------------- -->
+    
+    
+    <Storyboard26
+        Name                    = "ColorToMonochrome" 
+        NumAnimations           = "4"
+        
+        AutoRepeat              = "0"
+        AutoReverse             = "0"
+        ReleaseOnFinish         = "1"
+        DeleteOnFinish          = "0"
+        >
+        
+        <Animation0
+            Property                = "Color"
+            Type                    = "color" 
+            Interpolator            = "QuadraticEaseIn"
+            RelativeToObject  = "0"
+            >
+            
+            <KeyFrames NumKeyFrames = "1">
+                <KeyFrame0 TimeMS = "0"  Value = "(0.3,  0.59, 0.11, 1.0)"/>
+            </KeyFrames>
+        </Animation0>
+
+        <Animation1
+            Property                = "Blend"
+            Type                    = "float" 
+            Interpolator            = "QuadraticEaseIn"
+            RelativeToObject  = "0"
+            >
+            <KeyFrames NumKeyFrames = "1">
+                <KeyFrame0 TimeMS = "0"     Value = "1.0"/>
+            </KeyFrames>
+        </Animation1>
+
+        <Animation2
+            Property                = "Radius"
+            Type                    = "float" 
+            Interpolator            = "QuadraticEaseIn"
+            RelativeToObject  = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"    Value = "0.0"  />
+                <KeyFrame1 TimeMS = "1500" Value = "1100.0"/>
+            </KeyFrames>
+        </Animation2>
+
+        <Animation3
+            Property                = "Origin"
+            Type                    = "vec2" 
+            Interpolator            = "QuadraticEaseIn"
+            RelativeToObject  = "0"
+            >
+            <KeyFrames NumKeyFrames = "1">
+                <KeyFrame0 TimeMS = "0"     Value = "(320.0, 960.0)"  /> 
+            </KeyFrames>
+        </Animation3>
+        
+    </Storyboard26>
+
+
+
+<!-- --------------------------------------------------------------------------------- -->
+    
+    <Storyboard28
+        Name                    = "DropColumnSwoosh" 
+        NumAnimations           = "1"
+        
+        AutoRepeat              = "0"
+        AutoReverse             = "0"
+        DeleteOnFinish          = "1"
+        >
+        
+        <Animation0
+            Property                = "Opacity"
+            Type                    = "float" 
+            Interpolator            = "Linear"
+            RelativeToObject  = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"     Value = "1.0"/>
+                <KeyFrame1 TimeMS = "1000"  Value = "0.0"/>
+            </KeyFrames>
+        </Animation0>
+        
+    </Storyboard28>
+    
+
+
+<!-- --------------------------------------------------------------------------------- -->
+
+
+    <Storyboard29
+        Name                    = "SmashBrick" 
+        NumAnimations           = "2"
+        
+        AutoRepeat              = "0"
+        AutoReverse             = "0"
+        DeleteOnFinish          = "1"
+    >
+   
+        <Animation0
+            Property        = "Scale"
+            Type            = "float" 
+            Interpolator    = "Linear"
+        >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"    Value = "1.0"/>
+                <KeyFrame1 TimeMS = "500"  Value = "0.0"/>
+            </KeyFrames>
+        </Animation0>
+
+        <Animation1
+            Property                = "Opacity"
+            Type                    = "float" 
+            Interpolator            = "Linear"
+            RelativeToObject  = "0"
+        >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"    Value = "1.0"/>
+                <KeyFrame1 TimeMS = "500"  Value = "0.0"/>
+            </KeyFrames>
+        </Animation1>
+
+    </Storyboard29>
+
+
+    
+<!-- --------------------------------------------------------------------------------- -->
+
+
+
+    <Storyboard30
+        Name                    = "SmashCameraShake" 
+        NumAnimations           = "1"
+        
+        AutoRepeat              = "0"
+        AutoReverse             = "0"
+        DeleteOnFinish          = "0"
+    >
+        <Animation0
+            Property         = "Position" 
+            Type             = "vec3" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+        >
+            <KeyFrames NumKeyFrames = "17">
+                <KeyFrame0  TimeMS = "0"   Value = "(   0.0,   0.0,  0.0 )"  />
+
+                <KeyFrame1  TimeMS = "100" Value = "(   -5.0,  5.0,  0.0 )"  />
+
+                <KeyFrame2  TimeMS = "120" Value = "(   5.0,   0.0,  0.0 )"  />
+                <KeyFrame3  TimeMS = "140" Value = "(   0.0,  10.0,  0.0 )"  />
+                <KeyFrame4  TimeMS = "180" Value = "(  10.0,   0.0,  0.0 )"  />
+                <KeyFrame5  TimeMS = "220" Value = "(   0.0, -10.0,  0.0 )"  />
+                <KeyFrame6  TimeMS = "260" Value = "( -10.0,   5.0,  0.0 )"  />
+                <KeyFrame7  TimeMS = "400" Value = "(   0.0,   0.0,  0.0 )"  />
+                <KeyFrame8  TimeMS = "440" Value = "(   0.0,  12.0,  0.0 )"  />
+                <KeyFrame9  TimeMS = "480" Value = "(   0.0,   0.0,  0.0 )"  />
+                <KeyFrame10 TimeMS = "560" Value = "(   0.0,  -5.0,  0.0 )"  />
+                <KeyFrame11 TimeMS = "600" Value = "(  -5.0,   5.0,  0.0 )"  />
+                <KeyFrame12 TimeMS = "620" Value = "(   0.0,   0.0,  0.0 )"  />
+
+                <KeyFrame13 TimeMS = "700" Value = "(  -4.0,   0.0,  0.0 )"  />
+                <KeyFrame14 TimeMS = "725" Value = "(   0.0,  -4.0,  0.0 )"  />
+                <KeyFrame15 TimeMS = "750" Value = "(  -4.0,   4.0,  0.0 )"  />
+                <KeyFrame16 TimeMS = "800" Value = "(   0.0,   0.0,  0.0 )"  />
+            </KeyFrames>
+
+        </Animation0>
+
+    </Storyboard30>
+
+
+    
+<!-- --------------------------------------------------------------------------------- -->
+    
+    
+    
+    <Storyboard31
+        Name                    = "FadeInBackground" 
+        NumAnimations           = "3"
+        
+        AutoRepeat              = "0"
+        AutoReverse             = "0"
+        ReleaseOnFinish         = "1"
+        DeleteOnFinish          = "0"
+        >
+        
+        <Animation0
+            Property            = "Opacity"
+            Type                = "float" 
+            Interpolator        = "Linear"
+            RelativeToObject    = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"     Value = "0.0"/>
+                <KeyFrame1 TimeMS = "1000"  Value = "1.0"/>
+            </KeyFrames>
+        </Animation0>
+        
+        <Animation1
+            Property                = "Position"
+            Type                    = "vec3" 
+            Interpolator            = "Linear"
+            _RelativeToObject        = "1"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"     Value = "(0,0,-500)"/>
+                <KeyFrame1 TimeMS = "750"  Value = "(0,0,0)"/>
+            </KeyFrames>
+        </Animation1>
+        
+        <Animation2
+            Property                = "Rotation"
+            Type                    = "vec3" 
+            Interpolator            = "Linear"
+            _RelativeToObject        = "1"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"     Value = "(0,-90,0)"/>
+                <KeyFrame1 TimeMS = "750"  Value = "(0,0,0)"/>
+            </KeyFrames>
+        </Animation2>
+        
+    </Storyboard31>
+    
+    
+<!-- --------------------------------------------------------------------------------- -->
+    
+    
+    
+    <Storyboard32
+        Name                    = "FadeOutBackground" 
+        NumAnimations           = "3"
+        
+        AutoRepeat              = "0"
+        AutoReverse             = "0"
+        ReleaseOnFinish         = "1"
+        DeleteOnFinish          = "0"
+        >
+        
+        <Animation0
+            Property                = "Opacity"
+            Type                    = "float" 
+            Interpolator            = "Linear"
+            RelativeToObject  = "0"
+            >
+            <KeyFrames NumKeyFrames = "4">
+                <KeyFrame0 TimeMS = "0"     Value = "1.0"/>
+                <KeyFrame1 TimeMS = "2000"  Value = "1.0"/>
+                <KeyFrame2 TimeMS = "2750"  Value = "0.0"/>
+                <KeyFrame3 TimeMS = "3000"  Value = "0.0"/>     <!-- deliberate; stretch duration to N seconds before FadeInBackground begins -->
+            </KeyFrames>
+        </Animation0>
+        
+        <Animation1
+            Property                = "Position"
+            Type                    = "vec3" 
+            Interpolator            = "Linear"
+            _RelativeToObject        = "1"
+            >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"     Value = "(0,0,0)"/>
+                <KeyFrame1 TimeMS = "2000"  Value = "(0,0,0)"/>
+                <KeyFrame2 TimeMS = "2750"  Value = "(0,0,-500)"/>
+            </KeyFrames>
+        </Animation1>
+        
+        <Animation2
+            Property                = "Rotation"
+            Type                    = "vec3" 
+            Interpolator            = "Linear"
+            _RelativeToObject        = "1"
+            >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"     Value = "(0,0,0)"/>
+                <KeyFrame1 TimeMS = "2000"  Value = "(0,0,0)"/>
+                <KeyFrame2 TimeMS = "2750"  Value = "(0,-90,0)"/>
+            </KeyFrames>
+        </Animation2>
+        
+    </Storyboard32>
+    
+    
+    
+<!-- --------------------------------------------------------------------------------- -->
+    
+    
+    
+    <Storyboard33
+        Name                    = "RotateColumnSwoosh" 
+        NumAnimations           = "1"
+        
+        AutoRepeat              = "0"
+        AutoReverse             = "0"
+        DeleteOnFinish          = "1"
+        >
+        
+        <Animation0
+            Property                = "Opacity"
+            Type                    = "float" 
+            Interpolator            = "Linear"
+            RelativeToObject  = "0"
+            >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"     Value = "0.0"/>
+                <KeyFrame1 TimeMS = "100"   Value = "0.5"/>
+                <KeyFrame2 TimeMS = "200"   Value = "0.0"/>
+            </KeyFrames>
+        </Animation0>
+        
+    </Storyboard33>
+    
+
+
+<!-- --------------------------------------------------------------------------------- -->
+    
+    
+    
+    <Storyboard34
+        Name                    = "FlashStone" 
+        NumAnimations           = "1"
+        
+        AutoRepeat              = "1"
+        AutoReverse             = "0"
+        DeleteOnFinish          = "1"
+        >
+        
+        <Animation0
+            Property                = "SpriteFrame"
+            Type                    = "UINT32" 
+            Interpolator            = "Linear"
+            RelativeToObject  = "0"
+            >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"     Value = "0"/>
+                <KeyFrame1 TimeMS = "75"    Value = "1"/>
+                <KeyFrame2 TimeMS = "150"   Value = "0"/>
+            </KeyFrames>
+        </Animation0>
+        
+    </Storyboard34>
+    
+
+<!-- --------------------------------------------------------------------------------- -->
+    
+    
+    
+    <Storyboard35
+        Name                    = "Explosion" 
+        NumAnimations           = "2"
+        
+        AutoRepeat              = "0"
+        AutoReverse             = "0"
+        DeleteOnFinish          = "1"
+        >
+        
+        <Animation0
+            Property                = "SpriteFrame"
+            Type                    = "UINT32" 
+            Interpolator            = "Linear"
+            RelativeToObject  = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"      Value = "0"/>
+                <KeyFrame1 TimeMS = "1000"   Value = "15"/>
+            </KeyFrames>
+        </Animation0>
+        
+        <Animation1
+            Property                = "Opacity"
+            Type                    = "float" 
+            Interpolator            = "Linear"
+            RelativeToObject  = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"      Value = "1.0"/>
+                <KeyFrame1 TimeMS = "1000"   Value = "0.3"/>
+            </KeyFrames>
+        </Animation1>
+        
+    </Storyboard35>
+    
+
+
+<!-- --------------------------------------------------------------------------------- -->
+
+    
+    <Storyboard36
+        Name                    = "GameOver" 
+        NumAnimations           = "4"
+        
+        AutoRepeat              = "0"
+        AutoReverse             = "0"
+        DeleteOnFinish          = "0"
+        >
+        
+        <Animation0
+            Property        = "Scale"
+            Type            = "float" 
+            Interpolator    = "Linear"
+            >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"     Value = "0.5"/>
+                <KeyFrame1 TimeMS = "500"   Value = "1.0"/>
+                <KeyFrame2 TimeMS = "750"   Value = "1.0"/>
+            </KeyFrames>
+        </Animation0>
+        
+        <Animation1 
+            Property         = "Position" 
+            Type             = "vec3" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"    Value = "( 224.0,    100.0,  0.0 )"/>
+                <KeyFrame1 TimeMS = "500"  Value = "( 128.0,    700.0,  0.0 )"/>
+            </KeyFrames>
+            
+        </Animation1>
+
+        <Animation2
+            Property                = "Opacity"
+            Type                    = "float" 
+            Interpolator            = "Linear"
+            RelativeToObject  = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0  TimeMS = "0"      Value = "0.2"/>
+                <KeyFrame1  TimeMS = "500"    Value = "1.0"/>
+            </KeyFrames>
+        </Animation2>
+
+
+        <Animation3 
+            Property         = "Color" 
+            Type             = "color" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0  TimeMS = "0"     Value = "(1.0, 1.0, 1.0, 1.0)"/>
+<!--                <KeyFrame1  TimeMS = "1000"  Value = "(0.93, 0.11, 0.14, 1.0)"/>  <!-- light red -->
+                <KeyFrame1  TimeMS = "750"  Value = "(1.0, 0.96, 0.6, 1.0)"/>  <!-- gold -->
+            </KeyFrames>
+        </Animation3>
+        
+        
+    </Storyboard36>
+    
+    
+<!-- --------------------------------------------------------------------------------- -->
+    
+    
+    <Storyboard37
+        Name                    = "SunriseGradient" 
+        NumAnimations           = "4"
+        
+        AutoRepeat              = "0"
+        AutoReverse             = "0"
+        DeleteOnFinish          = "1"
+        >
+        
+        <Animation0
+            Property            = "StartColor"
+            Type                = "color" 
+            Interpolator        = "Linear"
+            RelativeToObject    = "0"
+            >
+
+            <KeyFrames NumKeyFrames = "3"> 
+<!--                <KeyFrame0 TimeMS = "0"      Value = "(0.76, 0.49,  0.212, 1.0)"/>  <!-- gold  -->  -->
+<!--                <KeyFrame1 TimeMS = "30000"  Value = "(0.43, 0.81, 0.96, 1.0)"/>    <!-- pale blue  -->
+                <KeyFrame0 TimeMS = "0"      Value = "(0.98, 0.82, 0.99, 1.0)"/>    <!-- pale pink  -->
+                <KeyFrame1 TimeMS = "30000"  Value = "(0.98, 0.82, 0.99, 1.0)"/>    <!-- pale pink  -->
+                <KeyFrame2 TimeMS = "60000"  Value = "(1.0,  1.0,  0.8,   1.0)"/>    <!-- pale yellow  -->
+            </KeyFrames>
+        </Animation0>
+        
+        <Animation1
+            Property                = "EndColor"
+            Type                    = "color" 
+            Interpolator            = "Linear"
+            RelativeToObject  = "0"
+            >
+            
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"      Value = "(0.27, 0.055, 0.38, 1.0)"/>  <!-- dark purple  -->
+<!--                <KeyFrame1 TimeMS = "30000"  Value = "(0.43, 0.81, 0.96, 1.0)"/>    <!-- pale blue  -->
+                <KeyFrame1 TimeMS = "30000"  Value = "(0.98, 0.82, 0.99, 1.0)"/>    <!-- pale pink  -->
+                <KeyFrame2 TimeMS = "60000"  Value = "(1.0,  1.0,   0.8,  1.0)"/>  <!-- pale yellow -->
+            </KeyFrames>
+        </Animation1>
+
+        <Animation2
+            Property                = "StartPoint"
+            Type                    = "vec2" 
+            Interpolator            = "Linear"
+            RelativeToObject  = "0"
+            >
+            
+            <KeyFrames NumKeyFrames = "1">
+                <KeyFrame0 TimeMS = "0"         Value = "(0.5, 1.0)"/>
+            </KeyFrames>
+        </Animation2>
+
+        <Animation3
+            Property                = "EndPoint"
+            Type                    = "vec2" 
+            Interpolator            = "Linear"
+            RelativeToObject  = "0"
+            >
+            
+            <KeyFrames NumKeyFrames = "1">
+                <KeyFrame0 TimeMS = "0"         Value = "(0.5, 0.0)"/>
+            </KeyFrames>
+        </Animation3>
+
+    </Storyboard37>
+    
+
+<!-- --------------------------------------------------------------------------------- -->
+    
+    
+    <Storyboard38
+        Name                    = "MorningToAfternoonGradient" 
+        NumAnimations           = "4"
+        
+        AutoRepeat              = "0"
+        AutoReverse             = "0"
+        DeleteOnFinish          = "1"
+        >
+        
+        <Animation0
+            Property            = "StartColor"
+            Type                = "color" 
+            Interpolator        = "Linear"
+            RelativeToObject    = "0"
+            >
+
+            <KeyFrames NumKeyFrames = "4">
+                <KeyFrame0 TimeMS = "0"      Value = "(1.0,  1.0,  0.8,  1.0)"/>    <!-- pale yellow  -->
+                <KeyFrame1 TimeMS = "30000"  Value = "(1.0,  1.0,  0.8,  1.0)"/>    <!-- pale yellow  -->
+                <KeyFrame2 TimeMS = "60000"  Value = "(0.43, 0.81, 0.96, 1.0)"/>    <!-- pale blue  -->
+                <KeyFrame3 TimeMS = "90000"  Value = "(0.43, 0.81, 0.96, 1.0)"/>    <!-- pale blue  -->
+            </KeyFrames>
+        </Animation0>
+        
+        <Animation1
+            Property                = "EndColor"
+            Type                    = "color" 
+            Interpolator            = "Linear"
+            RelativeToObject  = "0"
+            >
+            
+            <KeyFrames NumKeyFrames = "4">
+                <KeyFrame0 TimeMS = "0"      Value = "(1.0,  1.0,  0.8,  1.0)"/>    <!-- pale yellow -->
+                <KeyFrame1 TimeMS = "30000"  Value = "(1.0,  1.0,  0.8,  1.0)"/>    <!-- pale yellow -->
+                <KeyFrame2 TimeMS = "60000"  Value = "(0.43, 0.81, 0.96, 1.0)"/>    <!-- pale blue  -->
+<!--                <KeyFrame3 TimeMS = "90000"  Value = "(0.43, 0.81, 0.96, 1.0)"/>    <!-- pale blue  --> -->
+                <KeyFrame3 TimeMS = "90000"  Value = "(1.0,  1.0,  1.0,  1.0)"/>   <!-- white  -->
+            </KeyFrames>
+        </Animation1>
+
+        <Animation2
+            Property                = "StartPoint"
+            Type                    = "vec2" 
+            Interpolator            = "Linear"
+            RelativeToObject  = "0"
+            >
+            
+            <KeyFrames NumKeyFrames = "1">
+                <KeyFrame0 TimeMS = "0"         Value = "(0.5, 0.0)"/>
+            </KeyFrames>
+        </Animation2>
+
+        <Animation3
+            Property                = "EndPoint"
+            Type                    = "vec2" 
+            Interpolator            = "Linear"
+            RelativeToObject  = "0"
+            >
+            
+            <KeyFrames NumKeyFrames = "1">
+                <KeyFrame0 TimeMS = "0"         Value = "(0.5, 1.0)"/>
+            </KeyFrames>
+        </Animation3>
+
+    </Storyboard38>
+    
+
+<!-- --------------------------------------------------------------------------------- -->
+    
+    
+    <Storyboard39
+        Name                    = "AfternoonToEveningGradient" 
+        NumAnimations           = "4"
+        
+        AutoRepeat              = "0"
+        AutoReverse             = "0"
+        DeleteOnFinish          = "1"
+        >
+        
+        <Animation0
+            Property            = "StartColor"
+            Type                = "color" 
+            Interpolator        = "Linear"
+            RelativeToObject    = "0"
+            >
+
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"      Value = "(0.43, 0.81, 0.96, 1.0)"/>   <!-- pale blue  -->
+                <KeyFrame1 TimeMS = "90000"  Value = "(1.0,  1.0,  0.8,  1.0)"/>   <!-- pale yellow -->
+                <KeyFrame2 TimeMS = "120000" Value = "(1.0,  1.0,  0.65, 1.0)"/>   <!-- yellow -->
+            </KeyFrames>
+        </Animation0>
+        
+        <Animation1
+            Property                = "EndColor"
+            Type                    = "color" 
+            Interpolator            = "Linear"
+            RelativeToObject  = "0"
+            >
+            
+            <KeyFrames NumKeyFrames = "3"> 
+                <KeyFrame0 TimeMS = "0"      Value = "(1.0,  1.0,  1.0,  1.0)"/>   <!-- white  -->
+<!--                <KeyFrame0 TimeMS = "0"      Value = "(0.43, 0.81, 0.96, 1.0)"/>   <!-- pale blue  -->  -->
+                <KeyFrame1 TimeMS = "90000"  Value = "(1.0,  1.0,  0.8,  1.0)"/>   <!-- pale yellow -->
+                <KeyFrame2 TimeMS = "120000" Value = "(1.0,  1.0,  0.65, 1.0)"/>   <!-- yellow -->
+            </KeyFrames>
+        </Animation1>
+
+        <Animation2
+            Property                = "StartPoint"
+            Type                    = "vec2" 
+            Interpolator            = "Linear"
+            RelativeToObject  = "0"
+            >
+            
+            <KeyFrames NumKeyFrames = "1">
+                <KeyFrame0 TimeMS = "0"         Value = "(0.5, 0.0)"/>
+            </KeyFrames>
+        </Animation2>
+
+        <Animation3
+            Property                = "EndPoint"
+            Type                    = "vec2" 
+            Interpolator            = "Linear"
+            RelativeToObject  = "0"
+            >
+            
+            <KeyFrames NumKeyFrames = "1">
+                <KeyFrame0 TimeMS = "0"         Value = "(0.5, 1.0)"/>
+            </KeyFrames>
+        </Animation3>
+
+    </Storyboard39>
+    
+
+
+<!-- --------------------------------------------------------------------------------- -->
+    
+    
+    <Storyboard40
+        Name                    = "EveningToSunsetGradient" 
+        NumAnimations           = "4"
+        
+        AutoRepeat              = "0"
+        AutoReverse             = "0"
+        DeleteOnFinish          = "1"
+        >
+        
+        <Animation0
+            Property            = "StartColor"
+            Type                = "color" 
+            Interpolator        = "Linear"
+            RelativeToObject    = "0"
+            >
+
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"      Value = "(1.0,  1.0,  0.65,  1.0)"/>  <!-- yellow -->
+                <KeyFrame1 TimeMS = "30000"  Value = "(0.98, 0.82, 0.99,  1.0)"/>  <!-- pale pink  -->
+<!--                <KeyFrame2 TimeMS = "60000"  Value = "(0.76, 0.49, 0.212, 1.0)"/>  <!-- gold  -->   -->
+                <KeyFrame2 TimeMS = "60000"  Value = "(0.98, 0.82, 0.99, 1.0)"/>    <!-- pale pink  -->
+            </KeyFrames>
+        </Animation0>
+        
+        <Animation1
+            Property                = "EndColor"
+            Type                    = "color" 
+            Interpolator            = "Linear"
+            RelativeToObject  = "0"
+            >
+            
+            <KeyFrames NumKeyFrames = "3"> 
+                <KeyFrame0 TimeMS = "0"      Value = "(1.0,  1.0,  0.65,  1.0)"/>  <!-- yellow -->
+                <KeyFrame1 TimeMS = "30000"  Value = "(0.98, 0.82, 0.99,  1.0)"/>  <!-- pale pink  -->
+                <KeyFrame2 TimeMS = "60000"  Value = "(0.42, 0.22, 0.302, 1.0)"/>  <!-- light purple  -->
+            </KeyFrames>
+        </Animation1>
+
+        <Animation2
+            Property                = "StartPoint"
+            Type                    = "vec2" 
+            Interpolator            = "Linear"
+            RelativeToObject  = "0"
+            >
+            
+            <KeyFrames NumKeyFrames = "1">
+                <KeyFrame0 TimeMS = "0"         Value = "(0.5, 1.0)"/>
+            </KeyFrames>
+        </Animation2>
+
+        <Animation3
+            Property                = "EndPoint"
+            Type                    = "vec2" 
+            Interpolator            = "Linear"
+            RelativeToObject  = "0"
+            >
+            
+            <KeyFrames NumKeyFrames = "1">
+                <KeyFrame0 TimeMS = "0"         Value = "(0.5, 0.0)"/>
+            </KeyFrames>
+        </Animation3>
+
+    </Storyboard40>
+    
+
+
+<!-- --------------------------------------------------------------------------------- -->
+    
+    
+    <Storyboard41
+        Name                    = "SunsetGradient" 
+        NumAnimations           = "4"
+        
+        AutoRepeat              = "0"
+        AutoReverse             = "0"
+        DeleteOnFinish          = "1"
+        >
+        
+        <Animation0
+            Property            = "StartColor"
+            Type                = "color" 
+            Interpolator        = "Linear"
+            RelativeToObject    = "0"
+            >
+
+            <KeyFrames NumKeyFrames = "3"> 
+<!--                <KeyFrame0 TimeMS = "0"     Value = "(0.76, 0.49,  0.212, 1.0)"/>  <!-- gold  -->   -->
+                <KeyFrame0 TimeMS = "0"     Value = "(0.98, 0.82, 0.99, 1.0)"/>    <!-- pale pink  -->
+                <KeyFrame1 TimeMS = "20000" Value = "(0.42, 0.22,  0.302, 1.0)"/>  <!-- light purple  -->
+                <KeyFrame2 TimeMS = "45000" Value = "(0.27, 0.055, 0.38,  1.0)"/>  <!-- dark purple   -->
+            </KeyFrames>
+        </Animation0>
+        
+        <Animation1
+            Property                = "EndColor"
+            Type                    = "color" 
+            Interpolator            = "Linear"
+            RelativeToObject  = "0"
+            >
+            
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"     Value = "(0.42, 0.22,  0.302, 1.0)"/>  <!-- light purple  -->
+                <KeyFrame1 TimeMS = "45000" Value = "(0.27, 0.055, 0.38,  1.0)"/>  <!-- dark purple   -->
+            </KeyFrames>
+        </Animation1>
+
+        <Animation2
+            Property                = "StartPoint"
+            Type                    = "vec2" 
+            Interpolator            = "Linear"
+            RelativeToObject  = "0"
+            >
+            
+            <KeyFrames NumKeyFrames = "1">
+                <KeyFrame0 TimeMS = "0"         Value = "(0.5, 1.0)"/>
+            </KeyFrames>
+        </Animation2>
+
+        <Animation3
+            Property                = "EndPoint"
+            Type                    = "vec2" 
+            Interpolator            = "Linear"
+            RelativeToObject  = "0"
+            >
+            
+            <KeyFrames NumKeyFrames = "1">
+                <KeyFrame0 TimeMS = "0"         Value = "(0.5, 0.0)"/>
+            </KeyFrames>
+        </Animation3>
+
+    </Storyboard41>
+    
+
+
+<!-- --------------------------------------------------------------------------------- -->
+    
+    
+    <Storyboard42
+        Name                    = "NightToSunriseGradient" 
+        NumAnimations           = "4"
+        
+        AutoRepeat              = "0"
+        AutoReverse             = "0"
+        DeleteOnFinish          = "1"
+        >
+        
+        <Animation0
+            Property            = "StartColor"
+            Type                = "color" 
+            Interpolator        = "Linear"
+            RelativeToObject    = "0"
+            >
+
+            <KeyFrames NumKeyFrames = "2"> 
+                <KeyFrame0 TimeMS = "0"     Value = "(0.27, 0.055, 0.38,  1.0)"/>  <!-- dark purple   -->
+<!--                <KeyFrame1 TimeMS = "60000" Value = "(0.76, 0.49,  0.212, 1.0)"/>  <!-- gold  -->   -->
+                <KeyFrame1 TimeMS = "60000"  Value = "(0.98, 0.82, 0.99, 1.0)"/>    <!-- pale pink  -->
+            </KeyFrames>
+        </Animation0>
+        
+        <Animation1
+            Property                = "EndColor"
+            Type                    = "color" 
+            Interpolator            = "Linear"
+            RelativeToObject  = "0"
+            >
+            
+            <KeyFrames NumKeyFrames = "1">
+                <KeyFrame0 TimeMS = "0"     Value = "(0.27, 0.055, 0.38, 1.0)"/>  <!-- dark purple  -->
+<!--                <KeyFrame1 TimeMS = "60000" Value = "(1.0,  1.0,   0.8,  1.0)"/>  <!-- pale yellow -->
+            </KeyFrames>
+        </Animation1>
+
+        <Animation2
+            Property                = "StartPoint"
+            Type                    = "vec2" 
+            Interpolator            = "Linear"
+            RelativeToObject  = "0"
+            >
+            
+            <KeyFrames NumKeyFrames = "1">
+                <KeyFrame0 TimeMS = "0"         Value = "(0.5, 1.0)"/>
+            </KeyFrames>
+        </Animation2>
+
+        <Animation3
+            Property                = "EndPoint"
+            Type                    = "vec2" 
+            Interpolator            = "Linear"
+            RelativeToObject  = "0"
+            >
+            
+            <KeyFrames NumKeyFrames = "1">
+                <KeyFrame0 TimeMS = "0"         Value = "(0.5, 0.0)"/>
+            </KeyFrames>
+        </Animation3>
+
+    </Storyboard42>
+    
+
+
+<!-- --------------------------------------------------------------------------------- -->
+    
+    
+    
+    <Storyboard43
+        Name                    = "FadeInSky" 
+        NumAnimations           = "1"
+        
+        AutoRepeat              = "0"
+        AutoReverse             = "0"
+        DeleteOnFinish          = "0"
+        >
+        
+        <Animation0
+            Property                = "Opacity"
+            Type                    = "float" 
+            Interpolator            = "Linear"
+            RelativeToObject  = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"      Value = "0.0"/>
+                <KeyFrame1 TimeMS = "3000"   Value = "1.0"/>
+            </KeyFrames>
+        </Animation0>
+        
+    </Storyboard43>
+    
+    
+<!-- --------------------------------------------------------------------------------- -->
+    
+    
+    
+    <Storyboard44
+        Name                    = "FadeOutSky" 
+        NumAnimations           = "1"
+        
+        AutoRepeat              = "0"
+        AutoReverse             = "0"
+        DeleteOnFinish          = "0"
+        >
+        
+        <Animation0
+            Property                = "Opacity"
+            Type                    = "float" 
+            Interpolator            = "Linear"
+            RelativeToObject  = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"     Value = "1.0"/>
+                <KeyFrame1 TimeMS = "3000"  Value = "0.0"/>
+            </KeyFrames>
+        </Animation0>
+        
+    </Storyboard44>
+    
+    
+    
+
+<!-- --------------------------------------------------------------------------------- -->
+
+
+
+    <Storyboard45
+        Name                    = "WiggleCharacter" 
+        NumAnimations           = "2"
+        
+        AutoRepeat              = "0"
+        AutoReverse             = "0"
+        DeleteOnFinish          = "1"
+    >
+        <Animation0
+            Property         = "Rotation" 
+            Type             = "vec3" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+        >
+            <KeyFrames NumKeyFrames = "4">
+                <KeyFrame0 TimeMS = "0"    Value = "( 0.0, 0.0,  0.0 )"  />
+                <KeyFrame1 TimeMS = "125"  Value = "( 0.0, 0.0,  5.0 )"  />
+                <KeyFrame2 TimeMS = "250"  Value = "( 0.0, 0.0, -5.0 )"  />
+                <KeyFrame3 TimeMS = "500"  Value = "( 0.0, 0.0,  0.0 )"  />
+            </KeyFrames>
+        </Animation0>
+
+        <Animation1
+            Property         = "Scale" 
+            Type             = "float" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+        >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"    Value = "1.0"  />
+                <KeyFrame1 TimeMS = "250"  Value = "1.1"  />
+                <KeyFrame2 TimeMS = "500"  Value = "1.0"  />
+            </KeyFrames>
+        </Animation1>
+
+    </Storyboard45>
+
+
+<!-- --------------------------------------------------------------------------------- -->
+
+
+
+    <Storyboard46
+        Name                    = "WiggleCharacter2" 
+        NumAnimations           = "3"
+        
+        AutoRepeat              = "0"
+        AutoReverse             = "0"
+        DeleteOnFinish          = "1"
+    >
+        <Animation0
+            Property         = "Rotation" 
+            Type             = "vec3" 
+            Interpolator     = "Linear"
+            RelativeToObject = "1"
+        >
+            <KeyFrames NumKeyFrames = "4">
+                <KeyFrame0 TimeMS = "0"    Value = "( 0.0, 0.0,  0.0 )"  />
+                <KeyFrame1 TimeMS = "200"  Value = "( 0.0, 0.0, -5.0 )"  />
+                <KeyFrame2 TimeMS = "350"  Value = "( 0.0, 0.0,  5.0 )"  />
+                <KeyFrame3 TimeMS = "500"  Value = "( 0.0, 0.0,  0.0 )"  />
+            </KeyFrames>
+        </Animation0>
+
+        <Animation1
+            Property         = "Position" 
+            Type             = "vec3" 
+            Interpolator     = "Linear"
+            RelativeToObject = "1"
+        >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"    Value = "( 0.0,  0.0, 0.0 )"  />
+                <KeyFrame1 TimeMS = "250"  Value = "( 0.0, 25.0, 0.0 )"  />
+                <KeyFrame2 TimeMS = "500"  Value = "( 0.0,  0.0, 0.0 )"  />
+            </KeyFrames>
+        </Animation1>
+
+        <Animation2
+            Property         = "Scale" 
+            Type             = "float" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+        >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"    Value = "1.0"  />
+                <KeyFrame1 TimeMS = "250"  Value = "0.9"  />
+                <KeyFrame2 TimeMS = "500"  Value = "1.0"  />
+            </KeyFrames>
+        </Animation2>
+
+    </Storyboard46>
+
+
+<!-- --------------------------------------------------------------------------------- -->
+
+
+    <Storyboard47
+        Name                    = "WiggleCharacter3" 
+        NumAnimations           = "3"
+        
+        AutoRepeat              = "0"
+        AutoReverse             = "0"
+        DeleteOnFinish          = "1"
+    >
+        <Animation0
+            Property         = "Rotation" 
+            Type             = "vec3" 
+            Interpolator     = "Linear"
+            RelativeToObject = "1"
+        >
+            <KeyFrames NumKeyFrames = "4">
+                <KeyFrame0 TimeMS = "0"    Value = "( 0.0, 0.0,  0.0 )"  />
+                <KeyFrame1 TimeMS = "200"  Value = "( 0.0, 0.0, -3.0 )"  />
+                <KeyFrame2 TimeMS = "350"  Value = "( 0.0, 0.0,  3.0 )"  />
+                <KeyFrame3 TimeMS = "500"  Value = "( 0.0, 0.0,  0.0 )"  />
+            </KeyFrames>
+        </Animation0>
+
+        <Animation1
+            Property         = "Position" 
+            Type             = "vec3" 
+            Interpolator     = "Linear"
+            RelativeToObject = "1"
+        >
+            <KeyFrames NumKeyFrames = "5">
+                <KeyFrame0 TimeMS = "0"    Value = "(   0.0,  0.0, 0.0 )"  />
+                <KeyFrame1 TimeMS = "100"  Value = "(   2.0,  0.0, 0.0 )"  />
+                <KeyFrame2 TimeMS = "200"  Value = "(   0.0,  0.0, 0.0 )"  />
+                <KeyFrame3 TimeMS = "300"  Value = "(   2.0,  0.0, 0.0 )"  />
+                <KeyFrame4 TimeMS = "500"  Value = "(   0.0,  0.0, 0.0 )"  />
+            </KeyFrames>
+        </Animation1>
+
+        <Animation2
+            Property         = "Scale" 
+            Type             = "float" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+        >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"    Value = "1.0"  />
+                <KeyFrame1 TimeMS = "250"  Value = "1.05"  />
+                <KeyFrame2 TimeMS = "500"  Value = "1.0"  />
+            </KeyFrames>
+        </Animation2>
+
+    </Storyboard47>
+
+
+    
+<!-- --------------------------------------------------------------------------------- -->
+
+
+    <Storyboard48
+        Name                    = "DeadCharacter" 
+        NumAnimations           = "3"
+        
+        AutoRepeat              = "0"
+        AutoReverse             = "0"
+        DeleteOnFinish          = "1"
+    >
+        <Animation0
+            Property         = "Rotation" 
+            Type             = "vec3" 
+            Interpolator     = "Linear"
+            RelativeToObject = "1"
+        >
+            <KeyFrames NumKeyFrames = "4">
+                <KeyFrame0 TimeMS = "0"    Value = "( 0.0, 0.0,  0.0 )"  />
+                <KeyFrame1 TimeMS = "200"  Value = "( 0.0, 0.0, -5.0 )"  />
+                <KeyFrame2 TimeMS = "350"  Value = "( 0.0, 0.0,  5.0 )"  />
+                <KeyFrame3 TimeMS = "500"  Value = "( 0.0, 0.0,  0.0 )"  />
+            </KeyFrames>
+        </Animation0>
+
+        <Animation1
+            Property         = "Position" 
+            Type             = "vec3" 
+            Interpolator     = "Linear"
+            RelativeToObject = "1"
+        >
+            <KeyFrames NumKeyFrames = "5">
+                <KeyFrame0 TimeMS = "0"    Value = "(   0.0,  0.0, 0.0 )"  />
+                <KeyFrame1 TimeMS = "100"  Value = "(  16.0,  0.0, 0.0 )"  />
+                <KeyFrame2 TimeMS = "200"  Value = "(   0.0,  0.0, 0.0 )"  />
+                <KeyFrame3 TimeMS = "300"  Value = "(  16.0,  0.0, 0.0 )"  />
+                <KeyFrame4 TimeMS = "500"  Value = "(   0.0,  0.0, 0.0 )"  />
+            </KeyFrames>
+        </Animation1>
+
+        <Animation2
+            Property         = "Scale" 
+            Type             = "float" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+        >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"    Value = "1.0"  />
+                <KeyFrame1 TimeMS = "250"  Value = "0.9"  />
+            </KeyFrames>
+        </Animation2>
+
+    </Storyboard48>
+
+
+
+
+<!-- --------------------------------------------------------------------------------- -->
+
+
+
+    <Storyboard49
+        Name                    = "TestRipple" 
+        NumAnimations           = "8"
+        
+        __AutoRepeat              = "1"
+        AutoReverse             = "0"
+        ReleaseOnFinish         = "1"
+    >
+        <Animation0 
+            Property         = "Amplitude" 
+            Type             = "float"
+            Interpolator     = "QuadraticEaseIn"
+            RelativeToObject = "0"
+        >
+            <KeyFrames NumKeyFrames = "4">
+                <KeyFrame0 TimeMS = "0"    Value = "0.0"  />
+                <KeyFrame1 TimeMS = "300"  Value = "1024.0" />
+                <KeyFrame2 TimeMS = "800"  Value = "1024.0" />
+                <KeyFrame3 TimeMS = "1500" Value = "400.0"  />
+            </KeyFrames>
+        </Animation0>
+
+
+        <Animation1 
+            Property         = "Radius" 
+            Type             = "float" 
+            Interpolator     = "QuadraticEaseIn"
+            RelativeToObject = "0"
+        >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"    Value = "0.0"  />
+                <KeyFrame1 TimeMS = "1500" Value = "960.0" />
+            </KeyFrames>
+        </Animation1>
+
+
+        <Animation2 
+            Property         = "NumWaves"
+            Type             = "float" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+        >
+            <KeyFrames NumKeyFrames = "1">
+                <KeyFrame0 TimeMS = "0"    Value = "1.0" />
+            </KeyFrames>
+        </Animation2>
+        
+
+        <Animation3
+            Property         = "WaveLength" 
+            Type             = "float" 
+            Interpolator     = "QuadraticEaseIn"
+            RelativeToObject = "0"
+        >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"     Value = "500.0" />
+                <KeyFrame1 TimeMS = "1000"  Value = "500.0" />
+                <KeyFrame2 TimeMS = "1500"  Value = "2000.0" />
+            </KeyFrames>
+        </Animation3>
+        
+
+        <Animation4 
+            Property         = "Padding" 
+            Type             = "UINT32" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+        >
+            <KeyFrames NumKeyFrames = "1">
+                <KeyFrame0 TimeMS = "0"     Value = "0" />
+            </KeyFrames>
+        </Animation4>
+
+
+<!--
+        <Animation5
+            Property         = "Color" 
+            Type             = "color" 
+            Interpolator     = "QuadraticEaseIn"
+            RelativeToObject = "0"
+        >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"     Value = "(1.0,  0.8, 0.0, 1.0)" />
+                <KeyFrame1 TimeMS = "1500"  Value = "(0.0,  0.0, 0.2, 1.0)" />
+                <KeyFrame2 TimeMS = "2000"  Value = "(0.0,  0.0, 0.0, 0.0)" />
+            </KeyFrames>
+        </Animation5>
+-->
+
+        <Animation6
+            Property         = "Rows"
+            Type             = "UINT32"
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+        >
+            <KeyFrames NumKeyFrames = "1">
+                <KeyFrame0 TimeMS = "0"     Value = "20" />
+            </KeyFrames>
+        </Animation6>
+
+
+        <Animation7
+            Property         = "Columns"
+            Type             = "UINT32"
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+        >
+            <KeyFrames NumKeyFrames = "1">
+                <KeyFrame0 TimeMS = "0"     Value = "20" />
+            </KeyFrames>
+        </Animation7>
+
+    </Storyboard49>
+
+<!-- --------------------------------------------------------------------------------- -->
+    
+    
+    
+    <Storyboard50
+        Name                    = "NewGame"
+        NumAnimations           = "4"
+        
+        AutoRepeat              = "0"
+        AutoReverse             = "0"
+        DeleteOnFinish          = "1"
+        >
+        
+        <Animation0
+            Property        = "Scale"
+            Type            = "float" 
+            Interpolator    = "QuadraticEaseOut"
+            >
+            <KeyFrames NumKeyFrames = "4">
+                <KeyFrame0 TimeMS = "0"     Value = "0.5"/>
+                <KeyFrame1 TimeMS = "500"   Value = "0.5"/>
+
+                <KeyFrame2 TimeMS = "1500"  Value = "1.0"/>
+                <KeyFrame3 TimeMS = "1700"  Value = "1.0"/>
+            </KeyFrames>
+        </Animation0>
+        
+        <Animation1 
+            Property         = "Position" 
+            Type             = "vec3" 
+            Interpolator     = "QuadraticEaseOut"
+            RelativeToObject = "1"
+            >
+            <KeyFrames NumKeyFrames = "4">
+                <KeyFrame0 TimeMS = "0"     Value = "( 0.0,   0.0,  0.0 )"/>
+                <KeyFrame1 TimeMS = "500"   Value = "( 0.0,   0.0,  0.0 )"/>
+
+                <KeyFrame2 TimeMS = "1500"  Value = "( 0.0, 320.0,  0.0 )"/>
+                <KeyFrame3 TimeMS = "1700"  Value = "( 0.0, 320.0,  0.0 )"/>
+            </KeyFrames>
+            
+        </Animation1>
+        
+        <Animation2
+            Property          = "Opacity"
+            Type              = "float" 
+            Interpolator      = "QuadraticEaseOut"
+            RelativeToObject  = "0"
+            >
+            <KeyFrames NumKeyFrames = "6">
+                <KeyFrame0 TimeMS = "0"    Value = "0.0"/>
+                <KeyFrame1 TimeMS = "500"  Value = "0.0"/>
+
+                <KeyFrame2 TimeMS = "600"  Value = "1.0"/>
+                <KeyFrame3 TimeMS = "1200" Value = "1.0"/>
+                <KeyFrame4 TimeMS = "1500" Value = "1.0"/>
+                <KeyFrame5 TimeMS = "1700" Value = "0.0"/>
+            </KeyFrames>
+        </Animation2>
+
+
+        <Animation3 
+            Property         = "Color" 
+            Type             = "color" 
+            Interpolator     = "QuadraticEaseOut"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "4">
+                <KeyFrame0  TimeMS = "0"    Value = "(0.95, 0.88, 0.25, 1.0)"/>
+                <KeyFrame1  TimeMS = "500"  Value = "(0.95, 0.88, 0.25, 1.0)"/>
+                <KeyFrame2  TimeMS = "1000" Value = "(0.95, 0.88, 0.25, 1.0)"/>
+                <KeyFrame3  TimeMS = "1500" Value = "(1.0, 1.0, 1.0, 1.0)"/>
+
+<!--
+                <KeyFrame1  TimeMS = "100" Value = "(1.0, 1.0, 1.0, 1.0)"/>
+                <KeyFrame2  TimeMS = "200" Value = "(0.0, 1.0, 0.0, 1.0)"/>
+
+                <KeyFrame3  TimeMS = "300" Value = "(1.0, 1.0, 1.0, 1.0)"/>
+                <KeyFrame4  TimeMS = "400" Value = "(0.0, 1.0, 0.0, 1.0)"/>
+
+                <KeyFrame5  TimeMS = "500" Value = "(1.0, 1.0, 1.0, 1.0)"/>
+                <KeyFrame6  TimeMS = "600" Value = "(0.0, 1.0, 0.0, 1.0)"/>
+
+                <KeyFrame7  TimeMS = "700" Value = "(1.0, 1.0, 1.0, 1.0)"/>
+                <KeyFrame8  TimeMS = "800" Value = "(0.0, 1.0, 0.0, 1.0)"/>
+
+                <KeyFrame9  TimeMS = "900" Value = "(1.0, 1.0, 1.0, 1.0)"/>
+                <KeyFrame10  TimeMS = "1000" Value = "(0.0, 1.0, 0.0, 1.0)"/>
+
+                <KeyFrame11  TimeMS = "1100" Value = "(1.0, 1.0, 1.0, 1.0)"/>
+                <KeyFrame12  TimeMS = "1200" Value = "(0.0, 1.0, 0.0, 1.0)"/>
+-->
+            </KeyFrames>
+        </Animation3>
+        
+
+    </Storyboard50>
+    
+    
+    <!-- --------------------------------------------------------------------------------- -->
+    
+    
+    <Storyboard51
+        Name                    = "MorphFromBottom"
+        NumAnimations           = "8"
+        
+        AutoRepeat              = "0"
+        AutoReverse             = "0"
+        DeleteOnFinish          = "0"
+        >
+        
+        <!-- Left Curve -->
+        
+        <Animation0 
+            Property         = "Curve0p3"
+            Type             = "vec3" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"     Value = "(0,   0, 0)"  />
+                <KeyFrame1 TimeMS = "5000"   Value = "(0,   960, 0)"  />
+            </KeyFrames>
+        </Animation0>
+        
+        <Animation1
+            Property         = "Curve0p2"
+            Type             = "vec3" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"     Value = "(320,    0, 0)"  />
+                <KeyFrame1 TimeMS = "5000"   Value = "(0,    960, 0)"  />
+            </KeyFrames>
+        </Animation1>
+        
+        <Animation2
+            Property         = "Curve0p1" 
+            Type             = "vec3" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"    Value = "(320,    0, 0)"  />
+                <KeyFrame1 TimeMS = "5000"  Value = "(0,    480, 0)"  />
+            </KeyFrames>
+        </Animation2>
+        
+        <Animation3
+            Property         = "Curve0p0" 
+            Type             = "vec3" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "1">
+                <KeyFrame0 TimeMS = "0"    Value = "(0,    0, 0)"  />
+            </KeyFrames>
+        </Animation3>
+        
+        
+        <!-- Right Curve -->
+        
+        <Animation4
+            Property         = "Curve1p3"
+            Type             = "vec3" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"    Value = "(640, 0, 0)"  />
+                <KeyFrame1 TimeMS = "5000"  Value = "(640, 960, 0)"  />
+            </KeyFrames>
+        </Animation4>
+        
+        <Animation5
+            Property         = "Curve1p2"
+            Type             = "vec3" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"    Value = "(640,  0, 0)"  />
+                <KeyFrame1 TimeMS = "5000"  Value = "(960,  960, 0)"  />
+            </KeyFrames>
+        </Animation5>
+        
+        <Animation6
+            Property         = "Curve1p1" 
+            Type             = "vec3" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"    Value = "(640, 0, 0)"  />
+                <KeyFrame1 TimeMS = "5000"  Value = "(960, 480, 0)"  />
+            </KeyFrames>
+        </Animation6>
+        
+        <Animation7
+            Property         = "Curve1p0" 
+            Type             = "vec3" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "1">
+                <KeyFrame0 TimeMS = "0"    Value = "(640, 0, 0)"  />
+            </KeyFrames>
+        </Animation7>
+        
+    </Storyboard51>
+    
+
+
+    <!-- --------------------------------------------------------------------------------- -->
+    
+    
+    <Storyboard52
+        Name                    = "MorphToBottom"
+        NumAnimations           = "8"
+        
+        AutoRepeat              = "0"
+        AutoReverse             = "0"
+        DeleteOnFinish          = "0"
+        >
+        
+        <!-- Left Curve -->
+        
+        <Animation0 
+            Property         = "Curve0p3"
+            Type             = "vec3" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"     Value = "(0,   960, 0)"  />
+                <KeyFrame1 TimeMS = "5000"   Value = "(0,   0, 0)"  />
+            </KeyFrames>
+        </Animation0>
+        
+        <Animation1
+            Property         = "Curve0p2"
+            Type             = "vec3" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"    Value = "(320,  960, 0)"  />
+                <KeyFrame1 TimeMS = "5000"  Value = "(0,      0, 0)"  />
+            </KeyFrames>
+        </Animation1>
+        
+        <Animation2
+            Property         = "Curve0p1" 
+            Type             = "vec3" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"    Value = "(320,  960, 0)"  />
+                <KeyFrame1 TimeMS = "5000"  Value = "(0,      0, 0)"  />
+            </KeyFrames>
+        </Animation2>
+        
+        <Animation3
+            Property         = "Curve0p0" 
+            Type             = "vec3" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"    Value = "(0,    480, 0)"  />
+                <KeyFrame1 TimeMS = "5000"  Value = "(0,    0, 0)"  />
+            </KeyFrames>
+        </Animation3>
+        
+        
+        <!-- Right Curve -->
+        
+        <Animation4
+            Property         = "Curve1p3"
+            Type             = "vec3" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"    Value = "(640, 960, 0)"    />
+                <KeyFrame1 TimeMS = "5000"  Value = "(640,   0, 0)"  />
+            </KeyFrames>
+        </Animation4>
+        
+        <Animation5
+            Property         = "Curve1p2"
+            Type             = "vec3" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"    Value = "(640,  0, 0)"    />
+                <KeyFrame1 TimeMS = "5000"  Value = "(960,  960, 0)"  />
+            </KeyFrames>
+        </Animation5>
+        
+        <Animation6
+            Property         = "Curve1p1" 
+            Type             = "vec3" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"    Value = "(640, 0, 0)"  />
+                <KeyFrame1 TimeMS = "5000"  Value = "(960, 480, 0)"  />
+            </KeyFrames>
+        </Animation6>
+        
+        <Animation7
+            Property         = "Curve1p0" 
+            Type             = "vec3" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "1">
+                <KeyFrame0 TimeMS = "0"     Value = "(640, 0, 0)"  />
+            </KeyFrames>
+        </Animation7>
+        
+    </Storyboard52>
+
+
+    <!-- --------------------------------------------------------------------------------- -->
+    
+    
+    <Storyboard53
+        Name                    = "MorphFromTop"
+        NumAnimations           = "8"
+        
+        AutoRepeat              = "0"
+        AutoReverse             = "0"
+        DeleteOnFinish          = "0"
+        >
+        
+        <!-- Left Curve -->
+        
+        <Animation0 
+            Property         = "Curve0p3"
+            Type             = "vec3" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "1">
+                <KeyFrame0 TimeMS = "0"     Value = "(0,   960, 0)"  />
+            </KeyFrames>
+        </Animation0>
+        
+        <Animation1
+            Property         = "Curve0p2"
+            Type             = "vec3" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"     Value = "(320,  960, 0)"  />
+                <KeyFrame1 TimeMS = "5000"   Value = "(0,    960, 0)"  />
+            </KeyFrames>
+        </Animation1>
+        
+        <Animation2
+            Property         = "Curve0p1" 
+            Type             = "vec3" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"    Value = "(320,  960, 0)"  />
+                <KeyFrame1 TimeMS = "5000"  Value = "(0,    480, 0)"  />
+            </KeyFrames>
+        </Animation2>
+        
+        <Animation3
+            Property         = "Curve0p0" 
+            Type             = "vec3" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"    Value = "(0,  960, 0)"  />
+                <KeyFrame1 TimeMS = "5000"  Value = "(0,  0, 0)"  />
+            </KeyFrames>
+        </Animation3>
+        
+        
+        <!-- Right Curve -->
+        
+        <Animation4
+            Property         = "Curve1p3"
+            Type             = "vec3" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "1">
+                <KeyFrame0 TimeMS = "0"    Value = "(640, 960, 0)"  />
+            </KeyFrames>
+        </Animation4>
+        
+        <Animation5
+            Property         = "Curve1p2"
+            Type             = "vec3" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"    Value = "(640,  960, 0)"  />
+                <KeyFrame1 TimeMS = "5000"  Value = "(960,  960, 0)"  />
+            </KeyFrames>
+        </Animation5>
+        
+        <Animation6
+            Property         = "Curve1p1" 
+            Type             = "vec3" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"    Value = "(640, 960, 0)"  />
+                <KeyFrame1 TimeMS = "5000"  Value = "(960, 480, 0)"  />
+            </KeyFrames>
+        </Animation6>
+        
+        <Animation7
+            Property         = "Curve1p0" 
+            Type             = "vec3" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"    Value = "(640, 960, 0)"  />
+                <KeyFrame1 TimeMS = "5000" Value = "(640,   0, 0)"  />
+            </KeyFrames>
+        </Animation7>
+        
+    </Storyboard53>
+    
+
+
+    <!-- --------------------------------------------------------------------------------- -->
+    
+    
+    <Storyboard54
+        Name                    = "MorphToTop"
+        NumAnimations           = "8"
+        
+        AutoRepeat              = "0"
+        AutoReverse             = "0"
+        DeleteOnFinish          = "0"
+        >
+        
+        <!-- Left Curve -->
+        
+        <Animation0 
+            Property         = "Curve0p3"
+            Type             = "vec3" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "1">
+                <KeyFrame0 TimeMS = "0"     Value = "(0,   960, 0)"  />
+            </KeyFrames>
+        </Animation0>
+        
+        <Animation1
+            Property         = "Curve0p2"
+            Type             = "vec3" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"    Value = "(320,  960, 0)"  />
+                <KeyFrame1 TimeMS = "5000"  Value = "(0,   960, 0)"  />
+            </KeyFrames>
+        </Animation1>
+        
+        <Animation2
+            Property         = "Curve0p1" 
+            Type             = "vec3" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"    Value = "(320,  960, 0)"  />
+                <KeyFrame1 TimeMS = "5000"  Value = "(0,   960, 0)"  />
+            </KeyFrames>
+        </Animation2>
+        
+        <Animation3
+            Property         = "Curve0p0" 
+            Type             = "vec3" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"    Value = "(0,    0, 0)"  />
+                <KeyFrame1 TimeMS = "5000"  Value = "(0,   960, 0)"  />
+            </KeyFrames>
+        </Animation3>
+        
+        
+        <!-- Right Curve -->
+        
+        <Animation4
+            Property         = "Curve1p3"
+            Type             = "vec3" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "1">
+                <KeyFrame0 TimeMS = "0"    Value = "(640, 960, 0)"    />
+            </KeyFrames>
+        </Animation4>
+        
+        <Animation5
+            Property         = "Curve1p2"
+            Type             = "vec3" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"    Value = "(640,  960, 0)"    />
+                <KeyFrame1 TimeMS = "5000"  Value = "(960, 960, 0)"  />
+            </KeyFrames>
+        </Animation5>
+        
+        <Animation6
+            Property         = "Curve1p1" 
+            Type             = "vec3" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"    Value = "(640, 960, 0)"  />
+                <KeyFrame1 TimeMS = "5000"  Value = "(960, 960, 0)"  />
+            </KeyFrames>
+        </Animation6>
+        
+        <Animation7
+            Property         = "Curve1p0" 
+            Type             = "vec3" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"     Value = "(640, 0, 0)"  />
+                <KeyFrame1 TimeMS = "5000"  Value = "(640, 960, 0)"  />
+            </KeyFrames>
+        </Animation7>
+        
+    </Storyboard54>
+    
+
+    
+    <!-- --------------------------------------------------------------------------------- -->
+    
+    
+    <Storyboard55
+        Name                    = "TwistOut_3.5"
+        NumAnimations           = "8"
+        Interpolator            = "QuadraticEaseOut"
+        
+        AutoRepeat              = "0"
+        AutoReverse             = "0"
+        DeleteOnFinish          = "0"
+        >
+        
+        <!-- Left Curve -->
+        
+        <Animation0 
+            Property         = "Curve0p3"
+            Type             = "vec3"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"    Value = "(0,   960, 0)"  />
+                <KeyFrame1 TimeMS = "300"  Value = "(640,   960, 0)"  />
+            </KeyFrames>
+        </Animation0>
+        
+        <Animation1
+            Property         = "Curve0p2"
+            Type             = "vec3" 
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"    Value = "(0,  480, 0)"  />
+                <KeyFrame1 TimeMS = "300"  Value = "(960,  480, 0)"  />
+            </KeyFrames>
+        </Animation1>
+        
+        <Animation2
+            Property         = "Curve0p1" 
+            Type             = "vec3" 
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"    Value = "(0,  480, 0)"  />
+                <KeyFrame1 TimeMS = "300"  Value = "(0,  480, 0)"  />
+                <KeyFrame2 TimeMS = "600"  Value = "(960,  480, 0)"  />
+            </KeyFrames>
+        </Animation2>
+        
+        <Animation3
+            Property         = "Curve0p0" 
+            Type             = "vec3" 
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"    Value = "(0,   0, 0)"  />
+                <KeyFrame1 TimeMS = "300"  Value = "(0,   0, 0)"  />
+                <KeyFrame2 TimeMS = "600"  Value = "(640,   0, 0)"  />
+            </KeyFrames>
+        </Animation3>
+        
+        
+        <!-- Right Curve -->
+        
+        <Animation4
+            Property         = "Curve1p3"
+            Type             = "vec3" 
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"    Value = "(640, 960, 0)"    />
+                <KeyFrame1 TimeMS = "300"  Value = "(0, 960, 0)"  />
+            </KeyFrames>
+        </Animation4>
+        
+        <Animation5
+            Property         = "Curve1p2"
+            Type             = "vec3" 
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"    Value = "(640, 480, 0)"    />
+                <KeyFrame1 TimeMS = "300"  Value = "(0, 480, 0)"  />
+            </KeyFrames>
+        </Animation5>
+        
+        <Animation6
+            Property         = "Curve1p1" 
+            Type             = "vec3" 
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"    Value = "(640, 480, 0)"  />
+                <KeyFrame1 TimeMS = "300"  Value = "(640, 480, 0)"  />
+                <KeyFrame2 TimeMS = "600"  Value = "(0, 480, 0)"  />
+            </KeyFrames>
+        </Animation6>
+        
+        <Animation7
+            Property         = "Curve1p0" 
+            Type             = "vec3" 
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"    Value = "(640, 0, 0)"  />
+                <KeyFrame1 TimeMS = "300"  Value = "(640, 0, 0)"  />
+                <KeyFrame2 TimeMS = "600"  Value = "(0, 0, 0)"  />
+            </KeyFrames>
+        </Animation7>
+        
+    </Storyboard55>
+    
+
+    <!-- --------------------------------------------------------------------------------- -->
+    
+    
+    <Storyboard56
+        Name                    = "TwistIn_3.5"
+        NumAnimations           = "8"
+        Interpolator            = "QuadraticEaseOut"
+
+        AutoRepeat              = "0"
+        AutoReverse             = "0"
+        DeleteOnFinish          = "0"
+        >
+        
+        <!-- Left Curve -->
+        
+        <Animation0 
+            Property         = "Curve0p3"
+            Type             = "vec3" 
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"    Value = "(640,   960, 0)"  />
+                <KeyFrame1 TimeMS = "800"  Value = "(0,   960, 0)"  />
+            </KeyFrames>
+        </Animation0>
+        
+        <Animation1
+            Property         = "Curve0p2"
+            Type             = "vec3" 
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"    Value = "(960,  480, 0)"  />
+                <KeyFrame1 TimeMS = "800"  Value = "(0,  480, 0)"  />
+            </KeyFrames>
+        </Animation1>
+        
+        <Animation2
+            Property         = "Curve0p1" 
+            Type             = "vec3" 
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"    Value = "(960,  480, 0)"  />
+                <KeyFrame1 TimeMS = "300"  Value = "(960,  480, 0)"  />
+                <KeyFrame2 TimeMS = "800"  Value = "(0,  480, 0)"  />
+            </KeyFrames>
+        </Animation2>
+        
+        <Animation3
+            Property         = "Curve0p0" 
+            Type             = "vec3" 
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"    Value = "(640,   0, 0)"  />
+                <KeyFrame1 TimeMS = "300"  Value = "(640,   0, 0)"  />
+                <KeyFrame2 TimeMS = "800"  Value = "(0,   0, 0)"  />
+            </KeyFrames>
+        </Animation3>
+        
+        
+        <!-- Right Curve -->
+        
+        <Animation4
+            Property         = "Curve1p3"
+            Type             = "vec3" 
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"    Value = "(0, 960, 0)"    />
+                <KeyFrame1 TimeMS = "800"  Value = "(640, 960, 0)"  />
+            </KeyFrames>
+        </Animation4>
+        
+        <Animation5
+            Property         = "Curve1p2"
+            Type             = "vec3"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"    Value = "(0, 480, 0)"    />
+                <KeyFrame1 TimeMS = "800"  Value = "(640, 480, 0)"  />
+            </KeyFrames>
+        </Animation5>
+        
+        <Animation6
+            Property         = "Curve1p1" 
+            Type             = "vec3" 
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"    Value = "(0, 480, 0)"  />
+                <KeyFrame1 TimeMS = "300"  Value = "(0, 480, 0)"  />
+                <KeyFrame2 TimeMS = "800"  Value = "(640, 480, 0)"  />
+            </KeyFrames>
+        </Animation6>
+        
+        <Animation7
+            Property         = "Curve1p0" 
+            Type             = "vec3" 
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"     Value = "(0, 0, 0)"  />
+                <KeyFrame1 TimeMS = "300"     Value = "(0, 0, 0)"  />
+                <KeyFrame2 TimeMS = "800"  Value = "(640, 0, 0)"  />
+            </KeyFrames>
+        </Animation7>
+        
+    </Storyboard56>
+    
+
+    <!-- --------------------------------------------------------------------------------- -->
+    
+    
+    <Storyboard57
+        Name                    = "UpdateScore"
+        NumAnimations           = "1"
+        Interpolator            = "QuadraticEaseOut"
+
+        AutoRepeat              = "0"
+        AutoReverse             = "0"
+        DeleteOnFinish          = "0"
+        >
+        
+       
+        <Animation0 
+            Property         = "*"
+            Type             = "float"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"    Value = "1.0"  />
+                <KeyFrame1 TimeMS = "75"   Value = "1.2"  />
+                <KeyFrame2 TimeMS = "150"  Value = "1.0"  />
+            </KeyFrames>
+        </Animation0>
+        
+    </Storyboard57>
+        
+
+
+<!-- --------------------------------------------------------------------------------- -->
+    
+    
+    
+    <Storyboard58
+        Name                    = "DarkenScreen" 
+        NumAnimations           = "1"
+        
+        AutoRepeat              = "0"
+        AutoReverse             = "0"
+        DeleteOnFinish          = "0"
+        >
+        
+        <Animation0
+            Property                = "Opacity"
+            Type                    = "float" 
+            Interpolator            = "Linear"
+            RelativeToObject  = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"     Value = "0.0"/>
+                <KeyFrame1 TimeMS = "100"   Value = "0.25"/>
+            </KeyFrames>
+        </Animation0>
+        
+    </Storyboard58>
+    
+    
+<!-- --------------------------------------------------------------------------------- -->
+    
+    
+    
+    <Storyboard59
+        Name                    = "LightenScreen" 
+        NumAnimations           = "1"
+        
+        AutoRepeat              = "0"
+        AutoReverse             = "0"
+        DeleteOnFinish          = "0"
+        >
+        
+        <Animation0
+            Property                = "Opacity"
+            Type                    = "float" 
+            Interpolator            = "Linear"
+            RelativeToObject  = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"     Value = "0.25"/>
+                <KeyFrame1 TimeMS = "100"   Value = "0.0"/>
+            </KeyFrames>
+        </Animation0>
+        
+    </Storyboard59>
+    
+    
+<!-- --------------------------------------------------------------------------------- -->
+
+
+
+    <Storyboard60
+        Name                    = "Blink" 
+        NumAnimations           = "1"
+        
+        AutoRepeat              = "0"
+        AutoReverse             = "0"
+        DeleteOnFinish          = "1"
+    >
+        <Animation0
+            Property                = "SpriteFrame"
+            Type                    = "UINT32" 
+            Interpolator            = "Linear"
+            RelativeToObject  = "0"
+            >
+            <KeyFrames NumKeyFrames = "6">
+                <KeyFrame0 TimeMS = "0"     Value = "2"/>
+                <KeyFrame1 TimeMS = "100"   Value = "1"/>
+                <KeyFrame2 TimeMS = "200"   Value = "2"/>
+                <KeyFrame3 TimeMS = "400"   Value = "1"/>
+                <KeyFrame4 TimeMS = "500"   Value = "2"/>
+                <KeyFrame5 TimeMS = "5000"  Value = "2"/>
+            </KeyFrames>
+        </Animation0>
+
+    </Storyboard60>
+
+<!-- --------------------------------------------------------------------------------- -->
+
+
+
+    <Storyboard61
+        Name                    = "Sleep"
+        NumAnimations           = "2"
+        
+        AutoRepeat              = "1"
+        AutoReverse             = "0"
+        DeleteOnFinish          = "1"
+    >
+        <Animation0
+            Property            = "SpriteFrame"
+            Type                = "UINT32"
+            Interpolator        = "Linear"
+            RelativeToObject    = "0"
+            >
+            <KeyFrames NumKeyFrames = "1">
+                <KeyFrame0 TimeMS = "0"     Value = "7"/>
+            </KeyFrames>
+        </Animation0>
+
+        <Animation1
+            Property         = "Scale" 
+            Type             = "float" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+        >
+            <KeyFrames NumKeyFrames = "4">
+                <KeyFrame0 TimeMS = "0"    Value = "1.0"  />
+                <KeyFrame1 TimeMS = "1000" Value = "1.125"  />
+                <KeyFrame2 TimeMS = "1500" Value = "1.0"  />
+                <KeyFrame3 TimeMS = "3000" Value = "1.0"  />
+            </KeyFrames>
+        </Animation1>
+
+    </Storyboard61>
+
+
+<!-- --------------------------------------------------------------------------------- -->
+
+
+
+    <Storyboard62
+        Name                    = "MoveCharacterLeft"
+        NumAnimations           = "3"
+        
+        AutoRepeat              = "0"
+        AutoReverse             = "0"
+        DeleteOnFinish          = "1"
+    >
+        <Animation0
+            Property         = "Rotation" 
+            Type             = "vec3" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+        >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"    Value = "( 0.0, 0.0,  0.0 )"  />
+                <KeyFrame1 TimeMS = "200"  Value = "( 0.0, 0.0, 10.0 )"  />
+                <KeyFrame2 TimeMS = "300"  Value = "( 0.0, 0.0,  0.0 )"  />
+            </KeyFrames>
+        </Animation0>
+
+        <Animation1
+            Property         = "Scale" 
+            Type             = "float" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+        >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"    Value = "1.0"  />
+                <KeyFrame1 TimeMS = "250"  Value = "1.1"  />
+                <KeyFrame2 TimeMS = "500"  Value = "1.0"  />
+            </KeyFrames>
+        </Animation1>
+
+        <Animation2
+            Property            = "SpriteFrame"
+            Type                = "UINT32"
+            Interpolator        = "Linear"
+            RelativeToObject    = "0"
+            >
+            <KeyFrames NumKeyFrames = "1">
+                <KeyFrame0 TimeMS = "0"     Value = "1"/>
+            </KeyFrames>
+        </Animation2>
+
+    </Storyboard62>
+
+<!-- --------------------------------------------------------------------------------- -->
+
+
+
+    <Storyboard63
+        Name                    = "MoveCharacterRight"
+        NumAnimations           = "3"
+        
+        AutoRepeat              = "0"
+        AutoReverse             = "0"
+        DeleteOnFinish          = "1"
+    >
+        <Animation0
+            Property         = "Rotation" 
+            Type             = "vec3" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+        >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"    Value = "( 0.0, 0.0,   0.0 )"  />
+                <KeyFrame1 TimeMS = "125"  Value = "( 0.0, 0.0, -10.0 )"  />
+                <KeyFrame2 TimeMS = "250"  Value = "( 0.0, 0.0,   0.0 )"  />
+            </KeyFrames>
+        </Animation0>
+
+        <Animation1
+            Property         = "Scale" 
+            Type             = "float" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+        >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"    Value = "1.0"  />
+                <KeyFrame1 TimeMS = "250"  Value = "1.1"  />
+                <KeyFrame2 TimeMS = "500"  Value = "1.0"  />
+            </KeyFrames>
+        </Animation1>
+
+        <Animation2
+            Property            = "SpriteFrame"
+            Type                = "UINT32"
+            Interpolator        = "Linear"
+            RelativeToObject    = "0"
+            >
+            <KeyFrames NumKeyFrames = "1">
+                <KeyFrame0 TimeMS = "0"     Value = "1"/>
+            </KeyFrames>
+        </Animation2>
+
+    </Storyboard63>
+    
+    
+<!-- --------------------------------------------------------------------------------- -->
+
+
+
+    <Storyboard64
+        Name                    = "MoveCharacterWithinColumn"
+        NumAnimations           = "3"
+        
+        AutoRepeat              = "0"
+        AutoReverse             = "0"
+        DeleteOnFinish          = "1"
+    >
+        <Animation0
+            Property         = "Rotation" 
+            Type             = "vec3" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+        >
+            <KeyFrames NumKeyFrames = "4">
+                <KeyFrame0 TimeMS = "0"    Value = "( 0.0, 0.0,  0.0 )"  />
+                <KeyFrame1 TimeMS = "25"   Value = "( 0.0, 0.0,  0.0 )"  />
+                <KeyFrame2 TimeMS = "50"   Value = "( 0.0, 0.0,  0.0 )"  />
+                <KeyFrame3 TimeMS = "100"  Value = "( 0.0, 0.0,  0.0 )"  />
+            </KeyFrames>
+        </Animation0>
+
+        <Animation1
+            Property         = "Scale" 
+            Type             = "float" 
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+        >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"    Value = "1.0"  />
+                <KeyFrame1 TimeMS = "50"   Value = "1.1"  />
+                <KeyFrame2 TimeMS = "100"  Value = "1.0"  />
+            </KeyFrames>
+        </Animation1>
+
+        <Animation2
+            Property            = "SpriteFrame"
+            Type                = "UINT32"
+            Interpolator        = "Linear"
+            RelativeToObject    = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"     Value = "0"/>
+                <KeyFrame1 TimeMS = "300"   Value = "0"/>
+            </KeyFrames>
+        </Animation2>
+
+    </Storyboard64>
+
+<!-- --------------------------------------------------------------------------------- -->
+
+
+
+    <Storyboard65
+        Name                    = "Squint"
+        NumAnimations           = "1"
+        
+        AutoRepeat              = "0"
+        AutoReverse             = "0"
+        DeleteOnFinish          = "1"
+    >
+        <Animation0
+            Property                = "SpriteFrame"
+            Type                    = "UINT32" 
+            Interpolator            = "Linear"
+            RelativeToObject  = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"     Value = "2"/>
+                <KeyFrame1 TimeMS = "500"   Value = "0"/>
+            </KeyFrames>
+        </Animation0>
+
+    </Storyboard65>
+
+
+<!-- --------------------------------------------------------------------------------- -->
+
+
+
+    <Storyboard66
+        Name                    = "BombAttention"
+        NumAnimations           = "1"
+        
+        AutoRepeat              = "0"
+        AutoReverse             = "0"
+        DeleteOnFinish          = "1"
+    >
+        <Animation0
+            Property         = "Scale" 
+            Type             = "float"
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+        >
+            <KeyFrames NumKeyFrames = "7">
+                <KeyFrame0 TimeMS = "0"     Value = "1.0"  />
+                <KeyFrame1 TimeMS = "200"   Value = "1.5"  />
+                <KeyFrame2 TimeMS = "400"   Value = "1.0"  />
+                <KeyFrame3 TimeMS = "600"   Value = "1.5"  />
+                <KeyFrame4 TimeMS = "800"   Value = "1.0"  />
+                <KeyFrame5 TimeMS = "1000"  Value = "1.5"  />
+                <KeyFrame6 TimeMS = "1200"  Value = "1.0"  />
+                <KeyFrame7 TimeMS = "1800"  Value = "1.0"  />
+            </KeyFrames>
+        </Animation0>
+
+    </Storyboard66>
+
+
+    <Storyboard67
+        Name                    = "BombBlink" 
+        NumAnimations           = "2"
+        
+        AutoRepeat              = "0"
+        AutoReverse             = "0"
+        DeleteOnFinish          = "1"
+    >
+        <Animation0
+            Property                = "SpriteFrame"
+            Type                    = "UINT32" 
+            Interpolator            = "Linear"
+            RelativeToObject  = "0"
+            >
+            <KeyFrames NumKeyFrames = "6">
+                <KeyFrame0 TimeMS = "0"     Value = "0"/>
+                <KeyFrame1 TimeMS = "100"   Value = "1"/>
+                <KeyFrame2 TimeMS = "200"   Value = "0"/>
+                <KeyFrame3 TimeMS = "400"   Value = "1"/>
+                <KeyFrame4 TimeMS = "500"   Value = "0"/>
+                <KeyFrame5 TimeMS = "5000"  Value = "0"/>
+            </KeyFrames>
+        </Animation0>
+
+        <Animation1
+            Property         = "Scale" 
+            Type             = "float"
+            Interpolator     = "Linear"
+            RelativeToObject = "0"
+        >
+            <KeyFrames NumKeyFrames = "7">
+                <KeyFrame0 TimeMS = "0"     Value = "1.0"  />
+                <KeyFrame1 TimeMS = "200"   Value = "1.25"  />
+                <KeyFrame2 TimeMS = "400"   Value = "1.0"  />
+                <KeyFrame3 TimeMS = "600"   Value = "1.25"  />
+                <KeyFrame4 TimeMS = "800"   Value = "1.0"  />
+                <KeyFrame5 TimeMS = "1000"  Value = "1.25"  />
+                <KeyFrame6 TimeMS = "1200"  Value = "1.0"  />
+                <KeyFrame7 TimeMS = "1800"  Value = "1.0"  />
+            </KeyFrames>
+        </Animation1>
+
+    </Storyboard67>
+
+
+    <!-- --------------------------------------------------------------------------------- -->
+    
+    
+    <Storyboard68
+        Name                    = "TwistOutDelay_3.5"
+        NumAnimations           = "8"
+        Interpolator            = "QuadraticEaseOut"
+        
+        AutoRepeat              = "0"
+        AutoReverse             = "0"
+        DeleteOnFinish          = "0"
+        >
+        
+        <!-- Left Curve -->
+        
+        <Animation0 
+            Property         = "Curve0p3"
+            Type             = "vec3"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"    Value = "(0,   960, 0)"  />
+                <KeyFrame1 TimeMS = "300"  Value = "(640,   960, 0)"  />
+            </KeyFrames>
+        </Animation0>
+        
+        <Animation1
+            Property         = "Curve0p2"
+            Type             = "vec3" 
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"    Value = "(0,  480, 0)"  />
+                <KeyFrame1 TimeMS = "300"  Value = "(960,  480, 0)"  />
+            </KeyFrames>
+        </Animation1>
+        
+        <Animation2
+            Property         = "Curve0p1" 
+            Type             = "vec3" 
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"    Value = "(0,  480, 0)"  />
+                <KeyFrame1 TimeMS = "300"  Value = "(0,  480, 0)"  />
+                <KeyFrame2 TimeMS = "600"  Value = "(960,  480, 0)"  />
+            </KeyFrames>
+        </Animation2>
+        
+        <Animation3
+            Property         = "Curve0p0" 
+            Type             = "vec3" 
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"    Value = "(0,   0, 0)"  />
+                <KeyFrame1 TimeMS = "300"  Value = "(0,   0, 0)"  />
+                <KeyFrame2 TimeMS = "600"  Value = "(640,   0, 0)"  />
+            </KeyFrames>
+        </Animation3>
+        
+        
+        <!-- Right Curve -->
+        
+        <Animation4
+            Property         = "Curve1p3"
+            Type             = "vec3" 
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"    Value = "(640, 960, 0)"    />
+                <KeyFrame1 TimeMS = "300"  Value = "(0, 960, 0)"  />
+            </KeyFrames>
+        </Animation4>
+        
+        <Animation5
+            Property         = "Curve1p2"
+            Type             = "vec3" 
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"    Value = "(640, 480, 0)"    />
+                <KeyFrame1 TimeMS = "300"  Value = "(0, 480, 0)"  />
+            </KeyFrames>
+        </Animation5>
+        
+        <Animation6
+            Property         = "Curve1p1" 
+            Type             = "vec3" 
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"    Value = "(640, 480, 0)"  />
+                <KeyFrame1 TimeMS = "300"  Value = "(640, 480, 0)"  />
+                <KeyFrame2 TimeMS = "600"  Value = "(0, 480, 0)"  />
+            </KeyFrames>
+        </Animation6>
+        
+        <Animation7
+            Property         = "Curve1p0" 
+            Type             = "vec3" 
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"    Value = "(640, 0, 0)"  />
+                <KeyFrame1 TimeMS = "300"  Value = "(640, 0, 0)"  />
+                <KeyFrame2 TimeMS = "600"  Value = "(0, 0, 0)"  />
+            </KeyFrames>
+        </Animation7>
+        
+    </Storyboard68>
+    
+
+    <!-- --------------------------------------------------------------------------------- -->
+    
+    
+    <Storyboard69
+        Name                    = "TwistInDelay_3.5"
+        NumAnimations           = "8"
+        Interpolator            = "QuadraticEaseOut"
+
+        AutoRepeat              = "0"
+        AutoReverse             = "0"
+        DeleteOnFinish          = "0"
+        >
+        
+        <!-- Left Curve -->
+        
+        <Animation0 
+            Property         = "Curve0p3"
+            Type             = "vec3" 
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"    Value = "(640,   960, 0)"  />
+                <KeyFrame1 TimeMS = "800"  Value = "(0,   960, 0)"  />
+            </KeyFrames>
+        </Animation0>
+        
+        <Animation1
+            Property         = "Curve0p2"
+            Type             = "vec3" 
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"    Value = "(960,  480, 0)"  />
+                <KeyFrame1 TimeMS = "800"  Value = "(0,  480, 0)"  />
+            </KeyFrames>
+        </Animation1>
+        
+        <Animation2
+            Property         = "Curve0p1" 
+            Type             = "vec3" 
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"    Value = "(960,  480, 0)"  />
+                <KeyFrame1 TimeMS = "300"  Value = "(960,  480, 0)"  />
+                <KeyFrame2 TimeMS = "800"  Value = "(0,  480, 0)"  />
+            </KeyFrames>
+        </Animation2>
+        
+        <Animation3
+            Property         = "Curve0p0" 
+            Type             = "vec3" 
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"    Value = "(640,   0, 0)"  />
+                <KeyFrame1 TimeMS = "300"  Value = "(640,   0, 0)"  />
+                <KeyFrame2 TimeMS = "800"  Value = "(0,   0, 0)"  />
+            </KeyFrames>
+        </Animation3>
+        
+        
+        <!-- Right Curve -->
+        
+        <Animation4
+            Property         = "Curve1p3"
+            Type             = "vec3" 
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"    Value = "(0, 960, 0)"    />
+                <KeyFrame1 TimeMS = "800"  Value = "(640, 960, 0)"  />
+            </KeyFrames>
+        </Animation4>
+        
+        <Animation5
+            Property         = "Curve1p2"
+            Type             = "vec3"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"    Value = "(0, 480, 0)"    />
+                <KeyFrame1 TimeMS = "800"  Value = "(640, 480, 0)"  />
+            </KeyFrames>
+        </Animation5>
+        
+        <Animation6
+            Property         = "Curve1p1" 
+            Type             = "vec3" 
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"    Value = "(0, 480, 0)"  />
+                <KeyFrame1 TimeMS = "300"  Value = "(0, 480, 0)"  />
+                <KeyFrame2 TimeMS = "800"  Value = "(640, 480, 0)"  />
+            </KeyFrames>
+        </Animation6>
+        
+        <Animation7
+            Property         = "Curve1p0" 
+            Type             = "vec3" 
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"     Value = "(0, 0, 0)"  />
+                <KeyFrame1 TimeMS = "300"     Value = "(0, 0, 0)"  />
+                <KeyFrame2 TimeMS = "800"  Value = "(640, 0, 0)"  />
+            </KeyFrames>
+        </Animation7>
+        
+    </Storyboard69>
+    
+
+
+    <!-- --------------------------------------------------------------------------------- -->
+    
+    
+    <Storyboard70
+        Name                    = "TwistOut"
+        NumAnimations           = "8"
+        Interpolator            = "QuadraticEaseOut"
+        
+        AutoRepeat              = "0"
+        AutoReverse             = "0"
+        DeleteOnFinish          = "0"
+        >
+        
+        <!-- Left Curve -->
+        
+        <Animation0 
+            Property         = "Curve0p3"
+            Type             = "vec3"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"    Value = "(0,   1136, 0)"  />
+                <KeyFrame1 TimeMS = "300"  Value = "(640,   1136, 0)"  />
+            </KeyFrames>
+        </Animation0>
+        
+        <Animation1
+            Property         = "Curve0p2"
+            Type             = "vec3" 
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"    Value = "(0,  568, 0)"  />
+                <KeyFrame1 TimeMS = "300"  Value = "(1136,  568, 0)"  />
+            </KeyFrames>
+        </Animation1>
+        
+        <Animation2
+            Property         = "Curve0p1" 
+            Type             = "vec3" 
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"    Value = "(0,  568, 0)"  />
+                <KeyFrame1 TimeMS = "300"  Value = "(0,  568, 0)"  />
+                <KeyFrame2 TimeMS = "600"  Value = "(1136,  568, 0)"  />
+            </KeyFrames>
+        </Animation2>
+        
+        <Animation3
+            Property         = "Curve0p0" 
+            Type             = "vec3" 
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"    Value = "(0,   0, 0)"  />
+                <KeyFrame1 TimeMS = "300"  Value = "(0,   0, 0)"  />
+                <KeyFrame2 TimeMS = "600"  Value = "(640,   0, 0)"  />
+            </KeyFrames>
+        </Animation3>
+        
+        
+        <!-- Right Curve -->
+        
+        <Animation4
+            Property         = "Curve1p3"
+            Type             = "vec3" 
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"    Value = "(640, 1136, 0)"    />
+                <KeyFrame1 TimeMS = "300"  Value = "(0, 1136, 0)"  />
+            </KeyFrames>
+        </Animation4>
+        
+        <Animation5
+            Property         = "Curve1p2"
+            Type             = "vec3" 
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"    Value = "(640, 568, 0)"    />
+                <KeyFrame1 TimeMS = "300"  Value = "(0, 568, 0)"  />
+            </KeyFrames>
+        </Animation5>
+        
+        <Animation6
+            Property         = "Curve1p1" 
+            Type             = "vec3" 
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"    Value = "(640, 568, 0)"  />
+                <KeyFrame1 TimeMS = "300"  Value = "(640, 568, 0)"  />
+                <KeyFrame2 TimeMS = "600"  Value = "(0, 568, 0)"  />
+            </KeyFrames>
+        </Animation6>
+        
+        <Animation7
+            Property         = "Curve1p0" 
+            Type             = "vec3" 
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"    Value = "(640, 0, 0)"  />
+                <KeyFrame1 TimeMS = "300"  Value = "(640, 0, 0)"  />
+                <KeyFrame2 TimeMS = "600"  Value = "(0, 0, 0)"  />
+            </KeyFrames>
+        </Animation7>
+        
+    </Storyboard70>
+    
+
+    <!-- --------------------------------------------------------------------------------- -->
+    
+    
+    <Storyboard71
+        Name                    = "TwistIn"
+        NumAnimations           = "8"
+        Interpolator            = "QuadraticEaseOut"
+
+        AutoRepeat              = "0"
+        AutoReverse             = "0"
+        DeleteOnFinish          = "0"
+        >
+        
+        <!-- Left Curve -->
+        
+        <Animation0 
+            Property         = "Curve0p3"
+            Type             = "vec3" 
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"    Value = "(640,   1136, 0)"  />
+                <KeyFrame1 TimeMS = "800"  Value = "(0,   1136, 0)"  />
+            </KeyFrames>
+        </Animation0>
+        
+        <Animation1
+            Property         = "Curve0p2"
+            Type             = "vec3" 
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"    Value = "(1136,  568, 0)"  />
+                <KeyFrame1 TimeMS = "800"  Value = "(0,  568, 0)"  />
+            </KeyFrames>
+        </Animation1>
+        
+        <Animation2
+            Property         = "Curve0p1" 
+            Type             = "vec3" 
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"    Value = "(1136,  568, 0)"  />
+                <KeyFrame1 TimeMS = "300"  Value = "(1136,  568, 0)"  />
+                <KeyFrame2 TimeMS = "800"  Value = "(0,  568, 0)"  />
+            </KeyFrames>
+        </Animation2>
+        
+        <Animation3
+            Property         = "Curve0p0" 
+            Type             = "vec3" 
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"    Value = "(640,   0, 0)"  />
+                <KeyFrame1 TimeMS = "300"  Value = "(640,   0, 0)"  />
+                <KeyFrame2 TimeMS = "800"  Value = "(0,   0, 0)"  />
+            </KeyFrames>
+        </Animation3>
+        
+        
+        <!-- Right Curve -->
+        
+        <Animation4
+            Property         = "Curve1p3"
+            Type             = "vec3" 
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"    Value = "(0, 1136, 0)"    />
+                <KeyFrame1 TimeMS = "800"  Value = "(640, 1136, 0)"  />
+            </KeyFrames>
+        </Animation4>
+        
+        <Animation5
+            Property         = "Curve1p2"
+            Type             = "vec3"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"    Value = "(0, 568, 0)"    />
+                <KeyFrame1 TimeMS = "800"  Value = "(640, 568, 0)"  />
+            </KeyFrames>
+        </Animation5>
+        
+        <Animation6
+            Property         = "Curve1p1" 
+            Type             = "vec3" 
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"    Value = "(0, 568, 0)"  />
+                <KeyFrame1 TimeMS = "300"  Value = "(0, 568, 0)"  />
+                <KeyFrame2 TimeMS = "800"  Value = "(640, 568, 0)"  />
+            </KeyFrames>
+        </Animation6>
+        
+        <Animation7
+            Property         = "Curve1p0" 
+            Type             = "vec3" 
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"     Value = "(0, 0, 0)"  />
+                <KeyFrame1 TimeMS = "300"     Value = "(0, 0, 0)"  />
+                <KeyFrame2 TimeMS = "800"  Value = "(640, 0, 0)"  />
+            </KeyFrames>
+        </Animation7>
+        
+    </Storyboard71>
+    
+    <!-- --------------------------------------------------------------------------------- -->
+    
+    
+    <Storyboard72
+        Name                    = "TwistOutDelay"
+        NumAnimations           = "8"
+        Interpolator            = "QuadraticEaseOut"
+        
+        AutoRepeat              = "0"
+        AutoReverse             = "0"
+        DeleteOnFinish          = "0"
+        >
+        
+        <!-- Left Curve -->
+        
+        <Animation0 
+            Property         = "Curve0p3"
+            Type             = "vec3"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"    Value = "(0,   1136, 0)"  />
+                <KeyFrame1 TimeMS = "300"  Value = "(640,   1136, 0)"  />
+            </KeyFrames>
+        </Animation0>
+        
+        <Animation1
+            Property         = "Curve0p2"
+            Type             = "vec3" 
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"    Value = "(0,  568, 0)"  />
+                <KeyFrame1 TimeMS = "300"  Value = "(1136,  568, 0)"  />
+            </KeyFrames>
+        </Animation1>
+        
+        <Animation2
+            Property         = "Curve0p1" 
+            Type             = "vec3" 
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"    Value = "(0,  568, 0)"  />
+                <KeyFrame1 TimeMS = "300"  Value = "(0,  568, 0)"  />
+                <KeyFrame2 TimeMS = "600"  Value = "(1136,  568, 0)"  />
+            </KeyFrames>
+        </Animation2>
+        
+        <Animation3
+            Property         = "Curve0p0" 
+            Type             = "vec3" 
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"    Value = "(0,   0, 0)"  />
+                <KeyFrame1 TimeMS = "300"  Value = "(0,   0, 0)"  />
+                <KeyFrame2 TimeMS = "600"  Value = "(640,   0, 0)"  />
+            </KeyFrames>
+        </Animation3>
+        
+        
+        <!-- Right Curve -->
+        
+        <Animation4
+            Property         = "Curve1p3"
+            Type             = "vec3" 
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"    Value = "(640, 1136, 0)"    />
+                <KeyFrame1 TimeMS = "300"  Value = "(0, 1136, 0)"  />
+            </KeyFrames>
+        </Animation4>
+        
+        <Animation5
+            Property         = "Curve1p2"
+            Type             = "vec3" 
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"    Value = "(640, 568, 0)"    />
+                <KeyFrame1 TimeMS = "300"  Value = "(0, 568, 0)"  />
+            </KeyFrames>
+        </Animation5>
+        
+        <Animation6
+            Property         = "Curve1p1" 
+            Type             = "vec3" 
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"    Value = "(640, 568, 0)"  />
+                <KeyFrame1 TimeMS = "300"  Value = "(640, 568, 0)"  />
+                <KeyFrame2 TimeMS = "600"  Value = "(0, 568, 0)"  />
+            </KeyFrames>
+        </Animation6>
+        
+        <Animation7
+            Property         = "Curve1p0" 
+            Type             = "vec3" 
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"    Value = "(640, 0, 0)"  />
+                <KeyFrame1 TimeMS = "300"  Value = "(640, 0, 0)"  />
+                <KeyFrame2 TimeMS = "600"  Value = "(0, 0, 0)"  />
+            </KeyFrames>
+        </Animation7>
+        
+    </Storyboard72>
+    
+
+    <!-- --------------------------------------------------------------------------------- -->
+    
+    
+    <Storyboard73
+        Name                    = "TwistInDelay"
+        NumAnimations           = "8"
+        Interpolator            = "QuadraticEaseOut"
+
+        AutoRepeat              = "0"
+        AutoReverse             = "0"
+        DeleteOnFinish          = "0"
+        >
+        
+        <!-- Left Curve -->
+        
+        <Animation0 
+            Property         = "Curve0p3"
+            Type             = "vec3" 
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"    Value = "(640,   1136, 0)"  />
+                <KeyFrame1 TimeMS = "800"  Value = "(0,   1136, 0)"  />
+            </KeyFrames>
+        </Animation0>
+        
+        <Animation1
+            Property         = "Curve0p2"
+            Type             = "vec3" 
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"    Value = "(1136,  568, 0)"  />
+                <KeyFrame1 TimeMS = "800"  Value = "(0,  568, 0)"  />
+            </KeyFrames>
+        </Animation1>
+        
+        <Animation2
+            Property         = "Curve0p1" 
+            Type             = "vec3" 
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"    Value = "(1136,  568, 0)"  />
+                <KeyFrame1 TimeMS = "300"  Value = "(1136,  568, 0)"  />
+                <KeyFrame2 TimeMS = "800"  Value = "(0,  568, 0)"  />
+            </KeyFrames>
+        </Animation2>
+        
+        <Animation3
+            Property         = "Curve0p0" 
+            Type             = "vec3" 
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"    Value = "(640,   0, 0)"  />
+                <KeyFrame1 TimeMS = "300"  Value = "(640,   0, 0)"  />
+                <KeyFrame2 TimeMS = "800"  Value = "(0,   0, 0)"  />
+            </KeyFrames>
+        </Animation3>
+        
+        
+        <!-- Right Curve -->
+        
+        <Animation4
+            Property         = "Curve1p3"
+            Type             = "vec3" 
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"    Value = "(0, 1136, 0)"    />
+                <KeyFrame1 TimeMS = "800"  Value = "(640, 1136, 0)"  />
+            </KeyFrames>
+        </Animation4>
+        
+        <Animation5
+            Property         = "Curve1p2"
+            Type             = "vec3"
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "2">
+                <KeyFrame0 TimeMS = "0"    Value = "(0, 568, 0)"    />
+                <KeyFrame1 TimeMS = "800"  Value = "(640, 568, 0)"  />
+            </KeyFrames>
+        </Animation5>
+        
+        <Animation6
+            Property         = "Curve1p1" 
+            Type             = "vec3" 
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"    Value = "(0, 568, 0)"  />
+                <KeyFrame1 TimeMS = "300"  Value = "(0, 568, 0)"  />
+                <KeyFrame2 TimeMS = "800"  Value = "(640, 568, 0)"  />
+            </KeyFrames>
+        </Animation6>
+        
+        <Animation7
+            Property         = "Curve1p0" 
+            Type             = "vec3" 
+            RelativeToObject = "0"
+            >
+            <KeyFrames NumKeyFrames = "3">
+                <KeyFrame0 TimeMS = "0"     Value = "(0, 0, 0)"  />
+                <KeyFrame1 TimeMS = "300"     Value = "(0, 0, 0)"  />
+                <KeyFrame2 TimeMS = "800"  Value = "(640, 0, 0)"  />
+            </KeyFrames>
+        </Animation7>
+        
+    </Storyboard73>
+    
+
+
+</Storyboards>

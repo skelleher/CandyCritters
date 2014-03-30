@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<Fonts
+    NumFonts  = "4"
+>
+
+    <Font0
+        Name                    = "DebugFont" 
+        Texture                 = "DebugFont"
+        FNTFile                 = "/app/fonts/debugfont.fnt"
+    />
+
+    <Font1
+        Name                    = "Arial" 
+        Texture                 = "Arial"
+        FNTFile                 = "/app/fonts/arial.fnt"
+    />
+
+    <Font2
+        Name                    = "Abadi" 
+        Texture                 = "Abadi"
+        FNTFile                 = "/app/fonts/abadi.fnt"
+    />
+    
+    <Font3
+        Name                    = "BanzaiBros" 
+        Texture                 = "BanzaiBros"
+        FNTFile                 = "/app/fonts/banzaiBros.fnt"
+    />
+    
+    
+</Fonts>

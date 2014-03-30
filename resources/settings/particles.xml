@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ParticleEmitters
+    NumParticleEmitters = "15"
+>
+
+    <ParticleEmitter0
+        Name            = "FireWall"
+        Filename        = "/app/particles/firewall.pex"
+    />
+
+    <ParticleEmitter1
+        Name            = "Explosion"
+        Filename        = "/app/particles/explosion.pex"
+        DeleteOnFinish  = "1"
+    />
+    
+    <ParticleEmitter2
+        Name            = "DustCloud"
+        Filename        = "/app/particles/dustcloud.pex"
+        DeleteOnFinish  = "1"
+    />
+
+    <ParticleEmitter3
+        Name            = "Squirt"
+        Filename        = "/app/particles/squirt.pex"
+        DeleteOnFinish  = "1"
+    />
+
+    <ParticleEmitter4
+        Name            = "StarBurst"
+        Filename        = "/app/particles/starburst.pex"
+        DeleteOnFinish  = "1"
+    />
+
+    <ParticleEmitter5
+        Name            = "Starfield"
+        Filename        = "/app/particles/starfield.pex"
+    />
+
+    <ParticleEmitter6
+        Name            = "Clouds"
+        Filename        = "/app/particles/clouds.pex"
+    />
+
+    <ParticleEmitter7
+        Name            = "Ballons"
+        Filename        = "/app/particles/baloons.pex"
+        DeleteOnFinish  = "1"
+    />
+
+    <ParticleEmitter8
+        Name            = "VerticalShock"
+        Filename        = "/app/particles/verticalShock.pex"
+    />
+
+    <ParticleEmitter9
+        Name            = "Firework"
+        Filename        = "/app/particles/firework.pex"
+        DeleteOnFinish  = "1"
+    />
+
+    <ParticleEmitter10
+        Name            = "Sparks"
+        Filename        = "/app/particles/sparks.pex"
+        DeleteOnFinish  = "1"
+    />
+
+    <ParticleEmitter11
+        Name            = "Bubbles"
+        Filename        = "/app/particles/bubbles.pex"
+    />
+
+    <ParticleEmitter12
+        Name            = "Shock"
+        Filename        = "/app/particles/shock.pex"
+    />
+
+    <ParticleEmitter13
+        Name            = "Swirl"
+        Filename        = "/app/particles/swirl.pex"
+    />
+
+    <ParticleEmitter14
+        Name            = "RainOfStars"
+        Filename        = "/app/particles/rainofstars.pex"
+    />
+
+</ParticleEmitters>

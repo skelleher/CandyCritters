@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Meshes
+    NumMeshes     = "0"
+>
+    <!-- TODO: this needs to be Collada -->
+
+    <Mesh0
+        Name            = "Cube"
+        Texture         = "face_ok_ouch"
+    />
+
+</Meshes>

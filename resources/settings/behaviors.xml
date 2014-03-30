@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<Behaviors
+    NumBehaviors     = "7"
+>
+
+    <Behavior0
+        Name            = "IdleState"
+    />
+
+    <Behavior1
+        Name            = "ColumnState"
+    />
+
+    <Behavior2
+        Name            = "GameState"
+    />
+
+    <Behavior3
+        Name            = "GameScreens"
+    />
+
+    <Behavior4
+        Name            = "SkyState"
+    />
+
+    <Behavior5
+        Name            = "CharacterState"
+    />
+
+    <Behavior6
+        Name            = "BombState"
+    />
+
+</Behaviors>

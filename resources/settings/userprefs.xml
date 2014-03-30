@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<UserPrefs
+    FXVolume        = "0.7"
+    MusicVolume     = "0.0"
+    
+    Difficulty      = "2"
+    
+    HighScore       = "0"
+    HighestLevel    = "1"
+>
+</UserPrefs>

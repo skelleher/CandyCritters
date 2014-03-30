@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Default User Preferences; read from /app/settings/defaultuserprefs.xml if /user/userprefs.xml isn't found -->
+<!-- TODO: need to version this file! -->
+
+<UserPrefs
+    FXVolume        = "0.7"
+    MusicVolume     = "0.0"
+    
+    HighScore       = "0"
+    HighestLevel    = "1"
+    
+    Difficulty      = "2"
+ 
+    bShowTutorial   = "1"
+>
+</UserPrefs>

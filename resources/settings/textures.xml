@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<Textures
+    NumAtlasses     = "6"
+>
+
+    <Atlas0
+        Name            = "DebugFont"
+        Filename        = "/app/textures/debugfont.png"
+        PixelFormat     = "GL_RGBA"
+        PixelType       = "GL_UNSIGNED_BYTE"
+        Width           = "256"
+        Height          = "256"
+        NumTextures     = "1"
+    >
+
+        <Texture0
+            Name            = "DebugFont"
+            OffsetX         = "0"
+            OffsetY         = "0"
+            Width           = "256"
+            Height          = "256"
+        />
+
+    </Atlas0>
+
+
+<!-- ------------------------------------------------- -->
+    
+    
+    <Atlas1
+        Name            = "Arial"
+        Filename        = "/app/textures/arial.png"
+        PixelFormat     = "GL_RGBA"
+        PixelType       = "GL_UNSIGNED_BYTE"
+        Width           = "512"
+        Height          = "512"
+        NumTextures     = "1"
+        >
+        
+        <Texture0
+            Name            = "Arial"
+            OffsetX         = "0"
+            OffsetY         = "0"
+            Width           = "512"
+            Height          = "512"
+        />
+        
+    </Atlas1>
+    
+    
+    
+<!-- ------------------------------------------------- -->
+    
+    
+    <Atlas2
+        Name            = "Abadi"
+        Filename        = "/app/textures/abadi.png"
+        PixelFormat     = "GL_RGBA"
+        PixelType       = "GL_UNSIGNED_BYTE"
+        Width           = "512"
+        Height          = "512"
+        NumTextures     = "1"
+        >
+        
+        <Texture0
+            Name            = "Abadi"
+            OffsetX         = "0"
+            OffsetY         = "0"
+            Width           = "512"
+            Height          = "512"
+        />
+        
+    </Atlas2>
+    
+
+<!-- ------------------------------------------------- -->
+    
+    
+    <Atlas3
+        Name            = "Explosion"
+        Filename        = "/app/textures/explosion.png"
+        PixelFormat     = "GL_RGBA"
+        PixelType       = "GL_UNSIGNED_BYTE"
+        Width           = "256"
+        Height          = "256"
+        NumTextures     = "16"
+        >
+        
+        <Texture0
+            Name            = "explosion_frame0"
+            OffsetX         = "0"
+            OffsetY         = "0"
+            Width           = "64"
+            Height          = "64"
+        />
+        
+        <Texture1
+            Name            = "explosion_frame1"
+            OffsetX         = "64"
+            OffsetY         = "0"
+            Width           = "64"
+            Height          = "64"
+        />
+        
+        <Texture2
+            Name            = "explosion_frame2"
+            OffsetX         = "128"
+            OffsetY         = "0"
+            Width           = "64"
+            Height          = "64"
+        />
+        
+        <Texture3 
+            Name            = "explosion_frame3"
+            OffsetX         = "192"
+            OffsetY         = "0"
+            Width           = "64"
+            Height          = "64"
+        />
+        
+        <Texture4 
+            Name            = "explosion_frame4"
+            OffsetX         = "0"
+            OffsetY         = "64"
+            Width           = "64"
+            Height          = "64"
+        />
+        
+        <Texture5 
+            Name            = "explosion_frame5"
+            OffsetX         = "64"
+            OffsetY         = "64"
+            Width           = "64"
+            Height          = "64"
+        />
+        
+        <Texture6 
+            Name            = "explosion_frame6"
+            OffsetX         = "128"
+            OffsetY         = "64"
+            Width           = "64"
+            Height          = "64"
+        />
+        
+        <Texture7 
+            Name            = "explosion_frame7"
+            OffsetX         = "192"
+            OffsetY         = "64"
+            Width           = "64"
+            Height          = "64"
+        />
+        
+        <Texture8 
+            Name            = "explosion_frame8"
+            OffsetX         = "0"
+            OffsetY         = "128"
+            Width           = "64"
+            Height          = "64"
+        />
+        
+        <Texture9 
+            Name            = "explosion_frame9"
+            OffsetX         = "64"
+            OffsetY         = "128"
+            Width           = "64"
+            Height          = "64"
+        />
+        
+        <Texture10
+            Name            = "explosion_frame10"
+            OffsetX         = "128"
+            OffsetY         = "128"
+            Width           = "64"
+            Height          = "64"
+        />
+        
+        <Texture11
+            Name            = "explosion_frame11"
+            OffsetX         = "192"
+            OffsetY         = "128"
+            Width           = "64"
+            Height          = "64"
+        />
+        
+        <Texture12
+            Name            = "explosion_frame12"
+            OffsetX         = "0"
+            OffsetY         = "192"
+            Width           = "64"
+            Height          = "64"
+        />
+        
+        <Texture13
+            Name            = "explosion_frame13"
+            OffsetX         = "64"
+            OffsetY         = "192"
+            Width           = "64"
+            Height          = "64"
+        />
+        
+        <Texture14
+            Name            = "explosion_frame14"
+            OffsetX         = "128"
+            OffsetY         = "192"
+            Width           = "64"
+            Height          = "64"
+        />
+        
+        <Texture15
+            Name            = "explosion_frame15"
+            OffsetX         = "196"
+            OffsetY         = "192"
+            Width           = "64"
+            Height          = "64"
+        />
+        
+    </Atlas3>
+    
+<!-- ------------------------------------------------- -->
+
+
+    <Atlas4
+        Name            = "BanzaiBrosFont"
+        Filename        = "/app/textures/banzaiBros.png"
+        PixelFormat     = "GL_RGBA"
+        PixelType       = "GL_UNSIGNED_BYTE"
+        Width           = "1024"
+        Height          = "512"
+        NumTextures     = "1"
+    >
+
+        <Texture0
+            Name            = "BanzaiBros"
+            OffsetX         = "0"
+            OffsetY         = "0"
+            Width           = "1024"
+            Height          = "512"
+        />
+
+    </Atlas4>
+
+    
+<!-- ------------------------------------------------- -->
+
+    <Atlas5
+        Name            = "TextureAtlas1"
+        Filename        = "/app/textures/texture_atlas1.json"
+        CreateSprites   = "1"
+    />
+    
+    
+<!-- ------------------------------------------------- -->
+
+
+    
+
+</Textures>

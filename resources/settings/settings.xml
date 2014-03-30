@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Settings
+    _bUseOpenGLES1        = "1"
+    FrameRateHZ          = "60"
+    _ParticleUpdateRateHZ = "15"
+    ParticleUpdateRateHZ = "30"
+    _CameraMode          = "Orthographic"
+    CameraProjection     = "(53.0, 0.5, 1.0, 8000.0)"
+    _fScreenScaleFactor  = "0.5"
+    _fWorldScaleFactor   = "0.5"
+>
+
+    <Log
+        ZONE_ERROR          = "1"
+        ZONE_WARN           = "1"
+        ZONE_INFO           = "1"
+        ZONE_SETTINGS       = "0"
+        ZONE_HANDLE         = "0"
+        ZONE_RESOURCE       = "0"
+        ZONE_RENDER         = "0"
+        ZONE_OBJECT         = "0"
+        ZONE_FILE           = "0"
+        ZONE_SHADER         = "0"
+        ZONE_TEXTURE        = "0"
+        ZONE_SPRITE         = "0"
+        ZONE_MESH           = "0"
+        ZONE_ANIMATION      = "0"
+        ZONE_STORYBOARD     = "0"
+        ZONE_GAMEOBJECT     = "0"
+        ZONE_STATEMACHINE   = "0"
+        ZONE_LAYER          = "0"
+        ZONE_PATHFINDER     = "0"
+        ZONE_TOUCH          = "0"
+        ZONE_ACCELEROMETER  = "0"
+        ZONE_MAP            = "0"
+        ZONE_COLLISION      = "0"
+        ZONE_FONT           = "0"
+        ZONE_SOUND          = "0"
+        ZONE_NETWORK        = "0"
+        ZONE_PARTICLES      = "0"
+        
+        ZONE_ANALYTICS      = "1"
+        ZONE_PERF           = "1"        
+        ZONE_VERBOSE        = "0"
+    />
+
+
+</Settings>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<Shaders
+    NumShaders      = "7"
+>
+
+    <Shader0
+        Name            = "Default"
+        VertexShader    = "/app/shaders/DefaultEffect_vs"
+        FragmentShader  = "/app/shaders/DefaultEffect_fs"
+    />
+
+    <Shader1
+        Name            = "Debug"
+        VertexShader    = "/app/shaders/DebugEffect_vs"
+        FragmentShader  = "/app/shaders/DebugEffect_fs"
+    />
+    
+    <Shader2
+        Name            = "Blur"
+        VertexShader    = "/app/shaders/BlurEffect_vs"
+        FragmentShader  = "/app/shaders/BlurEffect_fs"
+    />
+    
+    <Shader3
+        Name            = "Monochrome"
+        VertexShader    = "/app/shaders/MonochromeEffect_vs"
+        FragmentShader  = "/app/shaders/MonochromeEffect_fs"
+    />
+    
+<!--    
+    <Shader4
+        Name            = "Halftone"
+        VertexShader    = "/app/shaders/HalftoneEffect_vs"
+        FragmentShader  = "/app/shaders/HalftoneEffect_fs"
+    />
+-->    
+    
+    <Shader5
+        Name            = "PointSprite"
+        VertexShader    = "/app/shaders/PointSpriteEffect_vs"
+        FragmentShader  = "/app/shaders/PointSpriteEffect_fs"
+    />
+    
+    <Shader6
+        Name            = "Gradient"
+        VertexShader    = "/app/shaders/GradientEffect_vs"
+        FragmentShader  = "/app/shaders/GradientEffect_fs"
+    />
+    
+</Shaders>

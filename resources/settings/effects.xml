@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<Effects
+    NumEffects     = "10"
+>
+
+    <Effect0
+        Name                = "DefaultEffect"
+    />
+
+    <Effect1
+        Name                = "BlurEffect"
+    />
+
+    <Effect2
+        Name                = "RippleEffect"
+    />
+
+    <Effect3
+        Name                = "DoomEffect"
+    />
+
+    <Effect4
+        Name                = "PixelEffect"
+    />
+
+    <Effect5
+        Name                = "MorphEffect"
+    />
+
+    <Effect6
+        Name                = "ColorEffect"
+    />
+
+    <Effect7
+        Name                = "GlassEffect"
+    />
+
+    <Effect8
+        Name                = "GradientEffect"
+    />
+    
+    <Effect9
+        Name                = "DropShadowEffect"
+    />
+    
+</Effects>
