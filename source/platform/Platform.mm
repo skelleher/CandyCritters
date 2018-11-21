@@ -27,7 +27,7 @@
 // For ::Is<Device>()
 // For sysctlbyname() / sysctl()
 #include <sys/types.h>
-#include <sys/sysctl.h> 
+#include <sys/sysctl.h>
 
 
 // For GlobalSettings.GetInt("/Settings.bUseOpenGLES1")
@@ -256,7 +256,7 @@ UINT32
 Platform::Random()
 {
     // arc4random self-initializes, so no need to seed it.
-    return abs(arc4random());
+    return arc4random();
 }
 
 
@@ -271,7 +271,7 @@ double
 Platform::RandomDouble()
 {
     // arc4random self-initializes, so no need to seed it.
-    return (double) abs(arc4random() / RAND_MAX);
+    return (double) (double(arc4random()) / double(RAND_MAX));
 }
 
 

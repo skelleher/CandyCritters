@@ -4,21 +4,21 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Happy - DEBUG.xcscheme</key>
+		<key>CandyCritters - DEBUG.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<true/>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
-		<key>Happy - RETAIL.xcscheme</key>
+		<key>CandyCritters - RETAIL.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<true/>
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
-		<key>Happy - SHIP.xcscheme</key>
+		<key>CandyCritters - SHIP.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<true/>

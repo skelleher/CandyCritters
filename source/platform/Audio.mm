@@ -69,7 +69,7 @@ Audio::GetOpenALDataFromFile( IN const string& filename, OUT ALsizei *pNumBytes,
     // Get the source format.
     //
     propertySize = sizeof(format);
-    err = ExtAudioFileGetProperty(fileRef, kExtAudioFileProperty_FileDataFormat, &propertySize, &format);
+    err = ExtAudioFileGetProperty(fileRef, kExtAudioFileProperty_FileDataFormat, (UInt32 *)&propertySize, (void *)&format);
     if(err) 
     { 
         RETAILMSG(ZONE_ERROR, "ERROR: Audio::GetOpenALDataFromFile(): ExtAudioFileGetProperty(): error = %d\n", err);
@@ -115,7 +115,7 @@ Audio::GetOpenALDataFromFile( IN const string& filename, OUT ALsizei *pNumBytes,
 	// How many frames in the converted file?
     //
     propertySize = sizeof(numFrames);
-	err = ExtAudioFileGetProperty(fileRef, kExtAudioFileProperty_FileLengthFrames, &propertySize, &numFrames);
+	err = ExtAudioFileGetProperty(fileRef, kExtAudioFileProperty_FileLengthFrames, (UInt32 *)&propertySize, (void*)&numFrames);
     if(err) 
     { 
         RETAILMSG(ZONE_ERROR, "ERROR: Audio::GetOpenALDataFromFile(): ExtAudioFileGetProperty(): error = %d\n", err);
@@ -147,7 +147,7 @@ Audio::GetOpenALDataFromFile( IN const string& filename, OUT ALsizei *pNumBytes,
 		pBufferList.mBuffers[0].mData             = pData;
 		
 		// Read the data into our AudioBufferList
-		err = ExtAudioFileRead(fileRef, (UINT32*)&numFrames, &pBufferList);
+		err = ExtAudioFileRead(fileRef, (UInt32*)&numFrames, (AudioBufferList*)&pBufferList);
 		if(err == noErr)
 		{
 			*pNumBytes      = (ALsizei)numBytes;

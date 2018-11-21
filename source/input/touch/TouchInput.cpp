@@ -290,11 +290,11 @@ TouchInput::SendToListeners( TouchEvent* pTouchEvent )
         EventListenerList& listeners = pEventListeners->second;
         
         EventListenerListIterator ppListener;
-        for (ppListener = listeners.begin(); ppListener != listeners.end(); ++ppListener)
+        for (ppListener = listeners.begin(); ppListener != listeners.end(); )
         {
             OBJECT_ID eventListenerGOID = *ppListener;
         
-            DEBUGMSG(ZONE_TOUCH | ZONE_VERBOSE, "TouchInput::SendToListeners(): touch: %d goid: 0x%x",
+            DEBUGMSG(ZONE_TOUCH | ZONE_VERBOSE, "TouchInput::SendToListeners(): touch: %d goid: %d",
                 pTouchEvent->type, eventListenerGOID);
             
             // Send a MSG_TouchXXX, along with the TouchEvent*
@@ -302,7 +302,11 @@ TouchInput::SendToListeners( TouchEvent* pTouchEvent )
             if (FAILED(rval))
             {
                 // Object may have deleted itself without unregistering; remove it from the list.
-                listeners.erase( ppListener );
+                ppListener = listeners.erase( ppListener );
+            }
+            else
+            {
+                ++ppListener;
             }
         }
     }

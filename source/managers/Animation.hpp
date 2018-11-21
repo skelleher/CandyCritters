@@ -342,7 +342,11 @@ public:
             s = period/(2*PI) * asin(change/amplitude);
         }
         
-        return -(amplitude*pow(2,10*(ratio -= 1)) * sin( (ratio*duration-s)*(2*PI)/period )) + start;
+//        return -(amplitude*pow(2,10*(ratio -= 1)) * sin( (ratio*duration-s)*(2*PI)/period )) + start;
+        float left = amplitude*pow(2,10*(ratio));
+        ratio -= 1;
+        float right = sin( (ratio*duration-s)*(2*PI)/period );
+        return -(left * right) + start;
     }
     
 	virtual UINT32 operator()( UINT32 start, UINT32 end, float ratio )

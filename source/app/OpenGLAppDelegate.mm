@@ -101,7 +101,7 @@ static OpenGLAppDelegate* s_pSharedInstance = nil;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions 
 {    
-    [self startAnalytics];
+    //[self startAnalytics];
 
 
     // screenRect is in POINTS, *NOT* PIXELS on iOS devices.
@@ -315,7 +315,7 @@ static OpenGLAppDelegate* s_pSharedInstance = nil;
     
     GameTime.Resume();
     [self enableAudio];
-    [self startAnalytics];
+    //[self startAnalytics];
    
     // HACK HACK: resume rendering
     [m_openglViewController viewWillAppear:NO];
@@ -370,7 +370,7 @@ static OpenGLAppDelegate* s_pSharedInstance = nil;
             return;
     
         // Start analytics
-        [[LocalyticsSession sharedLocalyticsSession] startSession:@""];
+        [[LocalyticsSession sharedLocalyticsSession] startSession:@"YOUR-APP-KEY-GOES-HERE"];
         
         
         NSCalendar*         calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];

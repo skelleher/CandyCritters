@@ -87,7 +87,7 @@ public:
     
     
     static void             Print( ZONE_MASK zone, IN const char* format, ... );
-    static void             Print( ZONE_MASK zone, IN const std::string& format, ... );
+    static void             Print( ZONE_MASK zone, IN const std::string* format, ... );
     static void             Print( IN const char* format, ... );
     
     static void             LogStateMachineEvent( OBJECT_ID id, const string& name, MSG_Object* msg, const string& statename, const string& substatename, const string& eventmsgname, bool handled );

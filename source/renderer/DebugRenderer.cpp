@@ -27,7 +27,7 @@ DebugRenderer::DebugRenderer()
     // We use point sprites for drawing debug quads, so it can't be part of a
     // TextureAtlas.  
     // TODO: point sprites confer no advantage; just send down a triangle strip.
-    TextureMan.CreateFromFile( "/app/textures/DebugQuad.png", &s_hDebugQuadTexture);
+    TextureMan.CreateFromFile( "/app/textures/debugquad.png", &s_hDebugQuadTexture);
 
     //
     // If caller doesn't specify a position we render text starting at upper-left corner

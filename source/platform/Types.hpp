@@ -6,16 +6,19 @@
 #include <algorithm>
 #include <assert.h>
 #include <list>
+#include <limits>
 #include "Errors.hpp"
 #include "Vector.hpp"
 #include "Matrix.hpp"
 
 
+#ifndef UINT_MAX
+#define UINT_MAX std::numeric_limits<unsigned int>::max()
+#endif
+
 namespace Z
 {
 
-
-    
 #ifndef MIN
 #define MIN(x, y)   ((x) < (y) ? (x) : (y))
 #endif

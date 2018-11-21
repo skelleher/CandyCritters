@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -72,6 +72,8 @@
 		1E3EE6D71283B253003439CA /* LayerManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E3EE6D41283B253003439CA /* LayerManager.cpp */; };
 		1E481E871384767C008113F4 /* SplashViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1E481E851384767C008113F4 /* SplashViewController.mm */; };
 		1E481E881384767C008113F4 /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E481E861384767C008113F4 /* SplashViewController.xib */; };
+		1E4AC17821A4E0F50078F1BA /* BanzaiBros.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1E4AC17721A4E0F40078F1BA /* BanzaiBros.otf */; };
+		1E4AC17A21A4E2030078F1BA /* CandyCritters-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1E4AC17921A4E2020078F1BA /* CandyCritters-Info.plist */; };
 		1E4B76F3160C042700B0205A /* OpenGLAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1E4B76F2160C042700B0205A /* OpenGLAppDelegate.mm */; };
 		1E4FCAC313521BBF006C215A /* MorphEffect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E4FCAC113521BBF006C215A /* MorphEffect.cpp */; };
 		1E54A6F8172C7D4400EC0603 /* gameOverMainMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E54A6E3172C7D4400EC0603 /* gameOverMainMenu.png */; };
@@ -119,6 +121,8 @@
 		1E70A0EA135CBC60001CF63C /* Scene.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1E70A0E9135CBC5D001CF63C /* Scene.mm */; };
 		1E78A5721300931A00EC8E6F /* Storyboard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E78A56E1300931A00EC8E6F /* Storyboard.cpp */; };
 		1E78A5731300931A00EC8E6F /* StoryboardManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E78A5701300931A00EC8E6F /* StoryboardManager.cpp */; };
+		1E7BEB6821A4F1430022CF07 /* PauseButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E7BEB6721A4F1420022CF07 /* PauseButton.png */; };
+		1E7BEB6A21A516E80022CF07 /* CandyCritters.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E7BEB6921A516E70022CF07 /* CandyCritters.png */; };
 		1E7D8204140C6704001A103C /* TutorialView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E7D8203140C6704001A103C /* TutorialView.xib */; };
 		1E7D820A140C6864001A103C /* TutorialViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1E7D8208140C6863001A103C /* TutorialViewController.mm */; };
 		1E7D82121410257A001A103C /* Control.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E7D82111410257A001A103C /* Control.cpp */; };
@@ -215,7 +219,7 @@
 
 /* Begin PBXFileReference section */
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		1D6058910D05DD3D006BFB54 /* Happy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Happy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D6058910D05DD3D006BFB54 /* CandyCritters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CandyCritters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1E0227F0123602E1000EEA32 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = source/app/main.m; sourceTree = "<group>"; };
 		1E0227F3123602E1000EEA32 /* OpenGLView.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = OpenGLView.hpp; path = source/app/OpenGLView.hpp; sourceTree = "<group>"; };
@@ -307,7 +311,6 @@
 		1E33C04613F60594002D6806 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		1E33C04813F6059E002D6806 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		1E33C04C13F606BF002D6806 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
-		1E33C07D13F60B5A002D6806 /* Happy-prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Happy-prefix.pch"; path = "source/Happy-prefix.pch"; sourceTree = "<group>"; };
 		1E3AED88137F7A7500E266BA /* ConfirmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConfirmViewController.h; path = source/app/views/ConfirmViewController.h; sourceTree = "<group>"; };
 		1E3AED89137F7A7500E266BA /* ConfirmViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ConfirmViewController.mm; path = source/app/views/ConfirmViewController.mm; sourceTree = "<group>"; };
 		1E3AED8A137F7A7600E266BA /* ConfirmViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ConfirmViewController.xib; path = source/app/views/ConfirmViewController.xib; sourceTree = "<group>"; };
@@ -328,6 +331,8 @@
 		1E481E841384767C008113F4 /* SplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SplashViewController.h; path = source/app/views/SplashViewController.h; sourceTree = "<group>"; };
 		1E481E851384767C008113F4 /* SplashViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = SplashViewController.mm; path = source/app/views/SplashViewController.mm; sourceTree = "<group>"; };
 		1E481E861384767C008113F4 /* SplashViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SplashViewController.xib; path = source/app/views/SplashViewController.xib; sourceTree = "<group>"; };
+		1E4AC17721A4E0F40078F1BA /* BanzaiBros.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BanzaiBros.otf; sourceTree = "<group>"; };
+		1E4AC17921A4E2020078F1BA /* CandyCritters-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CandyCritters-Info.plist"; sourceTree = "<group>"; };
 		1E4B76F2160C042700B0205A /* OpenGLAppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = OpenGLAppDelegate.mm; path = source/app/OpenGLAppDelegate.mm; sourceTree = "<group>"; };
 		1E4B76F4160C053800B0205A /* OpenGLAppDelegate.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = OpenGLAppDelegate.hpp; path = source/app/OpenGLAppDelegate.hpp; sourceTree = "<group>"; };
 		1E4FCAC113521BBF006C215A /* MorphEffect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MorphEffect.cpp; path = source/renderer/Effects/MorphEffect/MorphEffect.cpp; sourceTree = "<group>"; };
@@ -375,7 +380,6 @@
 		1E59FDEF126D564100ACF5B4 /* unittest4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = unittest4.h; path = source/test/unittest4.h; sourceTree = "<group>"; };
 		1E59FDF0126D564100ACF5B4 /* unittest5.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = unittest5.cpp; path = source/test/unittest5.cpp; sourceTree = "<group>"; };
 		1E59FDF1126D564100ACF5B4 /* unittest5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = unittest5.h; path = source/test/unittest5.h; sourceTree = "<group>"; };
-		1E5F4C2C133D751E007293AA /* Happy-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Happy-Info.plist"; sourceTree = "<group>"; };
 		1E60B41713EB3C0B00FB9C65 /* SkyState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SkyState.cpp; path = source/game/states/SkyState.cpp; sourceTree = "<group>"; };
 		1E60B41813EB3C0B00FB9C65 /* SkyState.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = SkyState.hpp; path = source/game/states/SkyState.hpp; sourceTree = "<group>"; };
 		1E610D2B13146F6C00F70C80 /* Callback.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Callback.hpp; path = source/common/Callback.hpp; sourceTree = "<group>"; };
@@ -397,6 +401,9 @@
 		1E78A56F1300931A00EC8E6F /* Storyboard.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Storyboard.hpp; path = source/managers/Storyboard.hpp; sourceTree = "<group>"; };
 		1E78A5701300931A00EC8E6F /* StoryboardManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = StoryboardManager.cpp; path = source/managers/StoryboardManager.cpp; sourceTree = "<group>"; };
 		1E78A5711300931A00EC8E6F /* StoryboardManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = StoryboardManager.hpp; path = source/managers/StoryboardManager.hpp; sourceTree = "<group>"; };
+		1E7BEB6621A4E2E00022CF07 /* CandyCritters-prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CandyCritters-prefix.pch"; path = "source/CandyCritters-prefix.pch"; sourceTree = "<group>"; };
+		1E7BEB6721A4F1420022CF07 /* PauseButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PauseButton.png; path = resources/ios/PauseButton.png; sourceTree = "<group>"; };
+		1E7BEB6921A516E70022CF07 /* CandyCritters.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CandyCritters.png; path = resources/ios/CandyCritters.png; sourceTree = "<group>"; };
 		1E7D8203140C6704001A103C /* TutorialView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TutorialView.xib; path = source/app/views/TutorialView.xib; sourceTree = "<group>"; };
 		1E7D8208140C6863001A103C /* TutorialViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = TutorialViewController.mm; path = source/app/views/TutorialViewController.mm; sourceTree = "<group>"; };
 		1E7D8209140C6863001A103C /* TutorialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TutorialViewController.h; path = source/app/views/TutorialViewController.h; sourceTree = "<group>"; };
@@ -581,7 +588,7 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1D6058910D05DD3D006BFB54 /* Happy.app */,
+				1D6058910D05DD3D006BFB54 /* CandyCritters.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -785,6 +792,7 @@
 		1E54A70D172C7D4C00EC0603 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				1E7BEB6721A4F1420022CF07 /* PauseButton.png */,
 				1ED50D4918A9E60A00AB6FA1 /* RedCritter.png */,
 				1ED50D4718A9D6AB00AB6FA1 /* Happy.png */,
 				1E968E371732245900F175FA /* Difficulty.png */,
@@ -1176,6 +1184,8 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1E7BEB6921A516E70022CF07 /* CandyCritters.png */,
+				1E4AC17721A4E0F40078F1BA /* BanzaiBros.otf */,
 				1E9987DA1843B83400889E92 /* Default-568h@2x.png */,
 				1E8DEC4A180B57AA00ED47BB /* Icon-72.png */,
 				1E8DEC4B180B57AA00ED47BB /* Icon-72@2x.png */,
@@ -1207,8 +1217,8 @@
 				1ED94564138F0EF100427C90 /* chinstrap_icon_retina.png */,
 				1ED94562138F0EB800427C90 /* chinstrap_icon.png */,
 				1E02281712360323000EEA32 /* MainWindow.xib */,
-				1E5F4C2C133D751E007293AA /* Happy-Info.plist */,
-				1E33C07D13F60B5A002D6806 /* Happy-prefix.pch */,
+				1E4AC17921A4E2020078F1BA /* CandyCritters-Info.plist */,
+				1E7BEB6621A4E2E00022CF07 /* CandyCritters-prefix.pch */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -1243,9 +1253,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1D6058900D05DD3D006BFB54 /* Happy */ = {
+		1D6058900D05DD3D006BFB54 /* CandyCritters */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Happy" */;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "CandyCritters" */;
 			buildPhases = (
 				1D60588D0D05DD3D006BFB54 /* Resources */,
 				1D60588E0D05DD3D006BFB54 /* Sources */,
@@ -1256,9 +1266,9 @@
 			);
 			dependencies = (
 			);
-			name = Happy;
+			name = CandyCritters;
 			productName = OpenGL;
-			productReference = 1D6058910D05DD3D006BFB54 /* Happy.app */;
+			productReference = 1D6058910D05DD3D006BFB54 /* CandyCritters.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -1267,15 +1277,10 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0450;
-				TargetAttributes = {
-					1D6058900D05DD3D006BFB54 = {
-						DevelopmentTeam = TZ7Q2WW7FF;
-					};
-				};
+				LastUpgradeCheck = 1010;
 			};
-			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Happy" */;
-			compatibilityVersion = "Xcode 3.2";
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "CandyCritters" */;
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
@@ -1285,7 +1290,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1D6058900D05DD3D006BFB54 /* Happy */,
+				1D6058900D05DD3D006BFB54 /* CandyCritters */,
 			);
 		};
 /* End PBXProject section */
@@ -1339,10 +1344,12 @@
 				1E8DEC41180B578F00ED47BB /* AppIcon29x29@2x.png in Resources */,
 				1E54A703172C7D4400EC0603 /* mainMenuTutorial.png in Resources */,
 				1E54A704172C7D4400EC0603 /* mainMenuTutorialDown.png in Resources */,
+				1E4AC17A21A4E2030078F1BA /* CandyCritters-Info.plist in Resources */,
 				1E8DEC56180B57AA00ED47BB /* Icon-Small.png in Resources */,
 				1E54A705172C7D4400EC0603 /* pausedPlay.png in Resources */,
 				1E54A706172C7D4400EC0603 /* pausedPlayDown.png in Resources */,
 				1E54A707172C7D4400EC0603 /* pausedQuit.png in Resources */,
+				1E4AC17821A4E0F50078F1BA /* BanzaiBros.otf in Resources */,
 				1E54A708172C7D4400EC0603 /* pausedQuitDown.png in Resources */,
 				1E54A709172C7D4400EC0603 /* tutorialOk.png in Resources */,
 				1E8DEC48180B578F00ED47BB /* iTunesArtwork.png in Resources */,
@@ -1371,6 +1378,8 @@
 				1E968E361732201D00F175FA /* blankDialogBox.png in Resources */,
 				1E968E391732245900F175FA /* Difficulty.png in Resources */,
 				1E968E3A1732245900F175FA /* GameOver.png in Resources */,
+				1E7BEB6A21A516E80022CF07 /* CandyCritters.png in Resources */,
+				1E7BEB6821A4F1430022CF07 /* PauseButton.png in Resources */,
 				1E1BD8DF17542EF300135CF2 /* DialogViewController.xib in Resources */,
 				1E8DEC46180B578F00ED47BB /* AppIcon76x76.png in Resources */,
 				1E8DEC57180B57AA00ED47BB /* Icon-Small@2x.png in Resources */,
@@ -1391,7 +1400,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
-			shellScript = "#!/bin/bash\n# Auto Increment Version Script\nbuildPlist=\"Happy-Info.plist\"\nBuildNumber=$(/usr/libexec/PlistBuddy -c \"Print BuildNumber\" $buildPlist)\nBuildNumber=$(($BuildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :BuildNumber $BuildNumber\" $buildPlist\n#########/usr/libexec/PListBuddy -c \"Set :CFBundleVersion $BuildNumber\" $buildPlist";
+			shellScript = "#!/bin/bash\n# Auto Increment Version Script\nbuildPlist=\"CandyCritters-Info.plist\"\nBuildNumber=$(/usr/libexec/PlistBuddy -c \"Print BuildNumber\" $buildPlist)\nBuildNumber=$(($BuildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :BuildNumber $BuildNumber\" $buildPlist\n#########/usr/libexec/PListBuddy -c \"Set :CFBundleVersion $BuildNumber\" $buildPlist\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1515,9 +1524,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = ABH3ZKDDTG;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -1525,13 +1538,14 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "source/Happy-prefix.pch";
+				GCC_PREFIX_HEADER = "source/CandyCritters-prefix.pch";
 				GCC_THUMB_SUPPORT = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
-				INFOPLIST_FILE = "Happy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				PRODUCT_NAME = Happy;
+				INFOPLIST_FILE = "CandyCritters-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.seankelleher.critters;
+				PRODUCT_NAME = CandyCritters;
 				PROVISIONING_PROFILE = "";
 				RUN_CLANG_STATIC_ANALYZER = NO;
 				SDKROOT = iphoneos;
@@ -1543,21 +1557,26 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = ABH3ZKDDTG;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "source/Happy-prefix.pch";
+				GCC_PREFIX_HEADER = "source/CandyCritters-prefix.pch";
 				GCC_THUMB_SUPPORT = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
-				INFOPLIST_FILE = "Happy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				PRODUCT_NAME = Happy;
+				INFOPLIST_FILE = "CandyCritters-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.seankelleher.critters;
+				PRODUCT_NAME = CandyCritters;
 				PROVISIONING_PROFILE = "";
 				RUN_CLANG_STATIC_ANALYZER = NO;
 				SDKROOT = iphoneos;
@@ -1569,17 +1588,39 @@
 		1E33C03013F4C21E002D6806 /* Ship */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Sean Kelleher (D629Z3E894)";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_ENABLE_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "Columns-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				INFOPLIST_FILE = "CandyCritters-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				IPHONE_OPTIMIZE_OPTIONS = "-skip-PNGs\n";
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				"OTHER_CFLAGS[arch=*]" = "-DSHIPBUILD";
@@ -1597,22 +1638,27 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = ABH3ZKDDTG;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
 				);
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "source/Happy-prefix.pch";
+				GCC_PREFIX_HEADER = "source/CandyCritters-prefix.pch";
 				GCC_THUMB_SUPPORT = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
-				INFOPLIST_FILE = "Happy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				PRODUCT_NAME = Happy;
+				INFOPLIST_FILE = "CandyCritters-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.seankelleher.critters;
+				PRODUCT_NAME = CandyCritters;
 				PROVISIONING_PROFILE = "";
 				RUN_CLANG_STATIC_ANALYZER = NO;
 				SDKROOT = iphoneos;
@@ -1624,19 +1670,43 @@
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Sean Kelleher (D629Z3E894)";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_ENABLE_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "Columns-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				INFOPLIST_FILE = "CandyCritters-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				IPHONE_OPTIMIZE_OPTIONS = "-skip-PNGs\n";
+				ONLY_ACTIVE_ARCH = YES;
 				"OTHER_CFLAGS[arch=*]" = "-DDEBUG";
 				"OTHER_LDFLAGS[arch=*]" = (
 					"-all_load",
@@ -1651,17 +1721,39 @@
 		C01FCF5008A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Sean Kelleher (D629Z3E894)";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_ENABLE_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "Columns-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				INFOPLIST_FILE = "CandyCritters-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				IPHONE_OPTIMIZE_OPTIONS = "-skip-PNGs\n";
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				"OTHER_LDFLAGS[arch=*]" = (
@@ -1677,7 +1769,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Happy" */ = {
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "CandyCritters" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1D6058940D05DD3E006BFB54 /* Debug */,
@@ -1687,7 +1779,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Happy" */ = {
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "CandyCritters" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C01FCF4F08A954540054247B /* Debug */,

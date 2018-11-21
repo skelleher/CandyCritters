@@ -265,7 +265,7 @@ bool TestFileManager()
     result = FileMan.WriteFile( hFileOut, pBuffer, size, &numBytesWritten );
     assert( numBytesWritten == size );
     
-    delete pBuffer;
+    delete[] pBuffer;
     result = FileMan.CloseFile( hFile );
     
     //

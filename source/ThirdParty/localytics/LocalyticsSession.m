@@ -731,7 +731,7 @@ CLLocationCoordinate2D lastDeviceLocation = {0};
 	UIDevice *thisDevice = [UIDevice currentDevice];
 	NSLocale *locale = [NSLocale currentLocale];
 	NSLocale *english = [[[NSLocale alloc] initWithLocaleIdentifier: @"en_US"] autorelease];
-	NSLocale *device_locale = [[NSLocale preferredLanguages] objectAtIndex:0];	
+	NSString *device_locale = [[NSLocale preferredLanguages] objectAtIndex:0];	
     NSString *device_language = [english displayNameForKey:NSLocaleIdentifier value:device_locale];
 	NSString *locale_country = [english displayNameForKey:NSLocaleCountryCode value:[locale objectForKey:NSLocaleCountryCode]];
     NSString *uuid = [self randomUUID];
@@ -1234,7 +1234,7 @@ CLLocationCoordinate2D lastDeviceLocation = {0};
 	return self;
 }
 
-- (unsigned)retainCount {
+- (NSUInteger)retainCount {
 	// maximum value of an unsigned int - prevents additional retains for the class
 	return UINT_MAX;
 }

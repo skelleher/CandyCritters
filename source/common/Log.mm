@@ -219,14 +219,15 @@ Log::GetFilename( )
 
 
 void
-Log::Print( ZONE_MASK zone, IN const std::string& format, ... )
+Log::Print( ZONE_MASK zone, IN const std::string* format, ... )
 {
+    assert(format);
     if (zone == (s_zoneMask & zone))
     {
         char buf[1024]; 
         va_list vargs;
         va_start(vargs, format);
-        vsprintf(buf, format.c_str(), vargs); 
+        vsprintf(buf, format->c_str(), vargs);
         
         if (s_pFile)
         {
